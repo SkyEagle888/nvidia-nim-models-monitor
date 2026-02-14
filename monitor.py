@@ -45,7 +45,7 @@ def update_markdown(models):
         
         timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
         content = f"# 📋 NVIDIA Integrated Models List\n\n"
-        content += f"*Last updated: {timestamp}*\n\n"
+        content += f"*Last updated: {timestamp} UTC*\n\n"
         content += f"Total Models: **{len(models)}**\n\n"
         
         for provider in sorted(grouped.keys()):
@@ -122,11 +122,12 @@ def main():
     print(message)
     send_discord_message(message)
     
-    # Always update the Markdown file to keep timestamp/grouping fresh if changes occur or first run
+    # Always update the Markdown file to keep timestamp fresh and ensure it exists for git add
+    update_markdown(current_models)
+    
     if added or removed or is_initial_run:
         save_models(current_models)
-        update_markdown(current_models)
-        print("State updated.")
+        print("Updated models.json")
 
 if __name__ == "__main__":
     main()
