@@ -59,21 +59,13 @@ def main():
     timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
     
     if not added and not removed:
-        message = f"🔍 **NVIDIA Model Monitor Update** ({timestamp})
-✅ No changes detected. Total models: {len(current_models)}"
+        message = f"🔍 **NVIDIA Model Monitor Update** ({timestamp})\n✅ No changes detected. Total models: {len(current_models)}"
     else:
-        message = f"🚨 **NVIDIA Model Monitor ALERT** ({timestamp})
-"
+        message = f"🚨 **NVIDIA Model Monitor ALERT** ({timestamp})\n"
         if added:
-            message += f"✨ **Added ({len(added)}):**
-" + "
-".join([f"- `{m}`" for m in added]) + "
-"
+            message += f"✨ **Added ({len(added)}):**\n" + "\n".join([f"- `{m}`" for m in added]) + "\n"
         if removed:
-            message += f"❌ **Removed ({len(removed)}):**
-" + "
-".join([f"- `{m}`" for m in removed]) + "
-"
+            message += f"❌ **Removed ({len(removed)}):**\n" + "\n".join([f"- `{m}`" for m in removed]) + "\n"
         message += f"📊 Total models now: {len(current_models)}"
 
     print(message)
