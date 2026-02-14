@@ -3,9 +3,11 @@ import json
 import os
 import sys
 from datetime import datetime
+from collections import defaultdict
 
 API_URL = "https://integrate.api.nvidia.com/v1/models"
 MODELS_FILE = "models.json"
+MARKDOWN_FILE = "MODELS.md"
 DISCORD_WEBHOOK_URL = os.environ.get("DISCORD_WEBHOOK_URL")
 
 def fetch_models():
@@ -34,14 +36,36 @@ def save_models(models):
     except Exception as e:
         print(f"Error saving models file: {e}")
 
+def update_markdown(models):
+    try:
+        grouped = defaultdict(list)
+        for model in models:
+            provider = model.split('/')[0] if '/' in model else 'other'
+            grouped[provider].append(model)
+        
+        timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+        content = f"# 📋 NVIDIA Integrated Models List\n\n"
+        content += f"*Last updated: {timestamp}*\n\n"
+        content += f"Total Models: **{len(models)}**\n\n"
+        
+        for provider in sorted(grouped.keys()):
+            content += f"### 🏢 {provider.upper()}\n"
+            for model in sorted(grouped[provider]):
+                content += f"- `{model}`\n"
+            content += "\n"
+            
+        with open(MARKDOWN_FILE, 'w', encoding='utf-8') as f:
+            f.write(content)
+        print(f"Updated {MARKDOWN_FILE}")
+    except Exception as e:
+        print(f"Error updating markdown: {e}")
+
 def send_discord_message(content):
     if not DISCORD_WEBHOOK_URL:
         print("DISCORD_WEBHOOK_URL not set. Skipping notification.")
         return
 
-    # Discord limit is 2000 chars, we'll use 1900 to be safe
     MAX_LEN = 1900
-    
     parts = []
     if len(content) > MAX_LEN:
         lines = content.split('\n')
@@ -71,8 +95,6 @@ def main():
         sys.exit(1)
 
     previous_models = load_previous_models()
-    
-    # Check if this is the first real run (previous was empty list)
     is_initial_run = not previous_models
     
     added = sorted(list(set(current_models) - set(previous_models)))
@@ -86,7 +108,6 @@ def main():
         message = f"🚨 **NVIDIA Model Monitor ALERT** ({timestamp})\n"
         if is_initial_run:
             message += f"🆕 **Initial setup: Tracking {len(current_models)} models.**\n"
-            # For the very first run, don't list all 180+ models to avoid spamming Discord
             if len(current_models) > 10:
                 message += "Preview of models:\n" + "\n".join([f"- `{m}`" for m in current_models[:10]]) + f"\n... and {len(current_models)-10} more."
             else:
@@ -96,16 +117,16 @@ def main():
                 message += f"✨ **Added ({len(added)}):**\n" + "\n".join([f"- `{m}`" for m in added]) + "\n"
             if removed:
                 message += f"❌ **Removed ({len(removed)}):**\n" + "\n".join([f"- `{m}`" for m in removed]) + "\n"
-        
         message += f"\n📊 Total models now: {len(current_models)}"
 
     print(message)
     send_discord_message(message)
     
-    # Save the new state if there were changes or if it's the first run
+    # Always update the Markdown file to keep timestamp/grouping fresh if changes occur or first run
     if added or removed or is_initial_run:
         save_models(current_models)
-        print("Updated models.json")
+        update_markdown(current_models)
+        print("State updated.")
 
 if __name__ == "__main__":
     main()

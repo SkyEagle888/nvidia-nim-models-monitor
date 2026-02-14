@@ -11,6 +11,7 @@ An automated monitoring tool that tracks changes in the available AI models on [
   - 🚨 **Alerts** for new model additions (with IDs).
   - ❌ **Alerts** for removed models.
   - ✅ **Status Updates** even when no changes are detected.
+- **Human Readable List:** Categorizes models by provider in [MODELS.md](./MODELS.md).
 - **Smart Formatting:** Automatically splits long lists to stay within Discord's 2000-character limit.
 - **Privacy:** Uses GitHub Secrets to keep webhook URLs private.
 
