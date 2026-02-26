@@ -4,11 +4,13 @@ import os
 import sys
 from datetime import datetime
 from collections import defaultdict
+import pytz
 
 API_URL = "https://integrate.api.nvidia.com/v1/models"
 MODELS_FILE = "models.json"
 MARKDOWN_FILE = "MODELS.md"
 DISCORD_WEBHOOK_URL = os.environ.get("DISCORD_WEBHOOK_URL")
+TIMEZONE = pytz.timezone('Asia/Singapore')  # GMT+8
 
 def fetch_models():
     try:
@@ -42,10 +44,10 @@ def update_markdown(models):
         for model in models:
             provider = model.split('/')[0] if '/' in model else 'other'
             grouped[provider].append(model)
-        
-        timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+
+        timestamp = datetime.now(TIMEZONE).strftime("%Y-%m-%d %H:%M:%S")
         content = f"# 📋 NVIDIA Integrated Models List\n\n"
-        content += f"*Last updated: {timestamp} UTC*\n\n"
+        content += f"*Last updated: {timestamp} GMT+8*\n\n"
         content += f"Total Models: **{len(models)}**\n\n"
         
         for provider in sorted(grouped.keys()):
@@ -96,11 +98,11 @@ def main():
 
     previous_models = load_previous_models()
     is_initial_run = not previous_models
-    
+
     added = sorted(list(set(current_models) - set(previous_models)))
     removed = sorted(list(set(previous_models) - set(current_models)))
 
-    timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+    timestamp = datetime.now(TIMEZONE).strftime("%Y-%m-%d %H:%M:%S")
     
     if not added and not removed:
         message = f"🔍 **NVIDIA Model Monitor Update** ({timestamp})\n✅ No changes detected. Total models: {len(current_models)}"
