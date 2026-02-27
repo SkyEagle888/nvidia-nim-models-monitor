@@ -1,8 +1,8 @@
 # 📋 NVIDIA Integrated Models List
 
-*Last updated: 2026-02-26 10:38:59 GMT+8*
+*Last updated: 2026-02-27 11:38:40 GMT+8*
 
-Total Models: **186**
+Total Models: **185**
 
 ### 🏢 01-AI
 - `01-ai/yi-large`
@@ -124,8 +124,8 @@ Total Models: **186**
 - `microsoft/phi-4-multimodal-instruct`
 
 ### 🏢 MINIMAXAI
-- `minimaxai/minimax-m2`
 - `minimaxai/minimax-m2.1`
+- `minimaxai/minimax-m2.5`
 
 ### 🏢 MISTRALAI
 - `mistralai/codestral-22b-instruct-v0.1`
@@ -171,7 +171,6 @@ Total Models: **186**
 - `nvidia/llama-3.1-nemotron-ultra-253b-v1`
 - `nvidia/llama-3.2-nemoretriever-1b-vlm-embed-v1`
 - `nvidia/llama-3.2-nemoretriever-300m-embed-v1`
-- `nvidia/llama-3.2-nemoretriever-300m-embed-v2`
 - `nvidia/llama-3.2-nv-embedqa-1b-v1`
 - `nvidia/llama-3.2-nv-embedqa-1b-v2`
 - `nvidia/llama-3.3-nemotron-super-49b-v1`
