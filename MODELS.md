@@ -1,8 +1,8 @@
 # 📋 NVIDIA Integrated Models List
 
-*Last updated: 2026-03-03 11:41:27 GMT+8*
+*Last updated: 2026-03-04 11:33:29 GMT+8*
 
-Total Models: **185**
+Total Models: **186**
 
 ### 🏢 01-AI
 - `01-ai/yi-large`
@@ -159,6 +159,7 @@ Total Models: **185**
 ### 🏢 NVIDIA
 - `nvidia/cosmos-reason2-8b`
 - `nvidia/embed-qa-4`
+- `nvidia/gliner-pii`
 - `nvidia/llama-3.1-nemoguard-8b-content-safety`
 - `nvidia/llama-3.1-nemoguard-8b-topic-control`
 - `nvidia/llama-3.1-nemotron-51b-instruct`

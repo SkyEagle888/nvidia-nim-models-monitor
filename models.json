@@ -105,6 +105,7 @@
   "nv-mistralai/mistral-nemo-12b-instruct",
   "nvidia/cosmos-reason2-8b",
   "nvidia/embed-qa-4",
+  "nvidia/gliner-pii",
   "nvidia/llama-3.1-nemoguard-8b-content-safety",
   "nvidia/llama-3.1-nemoguard-8b-topic-control",
   "nvidia/llama-3.1-nemotron-51b-instruct",
