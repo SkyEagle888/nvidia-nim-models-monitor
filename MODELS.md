@@ -1,6 +1,6 @@
 # 📋 NVIDIA Integrated Models List
 
-*Last updated: 2026-03-04 11:33:29 GMT+8*
+*Last updated: 2026-03-05 11:37:28 GMT+8*
 
 Total Models: **186**
 
@@ -176,6 +176,7 @@ Total Models: **186**
 - `nvidia/llama-3.2-nv-embedqa-1b-v2`
 - `nvidia/llama-3.3-nemotron-super-49b-v1`
 - `nvidia/llama-3.3-nemotron-super-49b-v1.5`
+- `nvidia/llama-nemotron-embed-1b-v2`
 - `nvidia/llama-nemotron-embed-vl-1b-v2`
 - `nvidia/llama3-chatqa-1.5-70b`
 - `nvidia/llama3-chatqa-1.5-8b`
@@ -218,7 +219,6 @@ Total Models: **186**
 - `qwen/qwen2.5-7b-instruct`
 - `qwen/qwen2.5-coder-32b-instruct`
 - `qwen/qwen2.5-coder-7b-instruct`
-- `qwen/qwen3-235b-a22b`
 - `qwen/qwen3-coder-480b-a35b-instruct`
 - `qwen/qwen3-next-80b-a3b-instruct`
 - `qwen/qwen3-next-80b-a3b-thinking`
