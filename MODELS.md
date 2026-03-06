@@ -1,8 +1,8 @@
 # 📋 NVIDIA Integrated Models List
 
-*Last updated: 2026-03-05 11:37:28 GMT+8*
+*Last updated: 2026-03-06 11:36:13 GMT+8*
 
-Total Models: **186**
+Total Models: **187**
 
 ### 🏢 01-AI
 - `01-ai/yi-large`
@@ -222,6 +222,7 @@ Total Models: **186**
 - `qwen/qwen3-coder-480b-a35b-instruct`
 - `qwen/qwen3-next-80b-a3b-instruct`
 - `qwen/qwen3-next-80b-a3b-thinking`
+- `qwen/qwen3.5-122b-a10b`
 - `qwen/qwen3.5-397b-a17b`
 - `qwen/qwq-32b`
 
