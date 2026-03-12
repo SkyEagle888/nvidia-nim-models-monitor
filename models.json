@@ -130,6 +130,7 @@
   "nvidia/mistral-nemo-minitron-8b-base",
   "nvidia/nemoretriever-parse",
   "nvidia/nemotron-3-nano-30b-a3b",
+  "nvidia/nemotron-3-super-120b-a12b",
   "nvidia/nemotron-4-340b-instruct",
   "nvidia/nemotron-4-340b-reward",
   "nvidia/nemotron-4-mini-hindi-4b-instruct",
