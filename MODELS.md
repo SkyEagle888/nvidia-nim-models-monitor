@@ -1,8 +1,8 @@
 # 📋 NVIDIA Integrated Models List
 
-*Last updated: 2026-03-16 12:12:05 GMT+8*
+*Last updated: 2026-03-17 11:42:49 GMT+8*
 
-Total Models: **188**
+Total Models: **189**
 
 ### 🏢 01-AI
 - `01-ai/yi-large`
@@ -143,6 +143,7 @@ Total Models: **188**
 - `mistralai/mistral-nemotron`
 - `mistralai/mistral-small-24b-instruct`
 - `mistralai/mistral-small-3.1-24b-instruct-2503`
+- `mistralai/mistral-small-4-119b-2603`
 - `mistralai/mixtral-8x22b-instruct-v0.1`
 - `mistralai/mixtral-8x22b-v0.1`
 - `mistralai/mixtral-8x7b-instruct-v0.1`
