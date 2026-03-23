@@ -17,13 +17,13 @@
         }
         
         .gradient-bg {
-            background: linear-gradient(135deg, #166534 0%, #0f766e 50%, #0c4a6e 100%);
+            background: linear-gradient(135deg, #1e3a5f 0%, #0d9488 50%, #16a34a 100%);
         }
         
         .hero-pattern {
             background-image: 
-                radial-gradient(circle at 20% 50%, rgba(255,255,255,0.15) 0%, transparent 50%),
-                radial-gradient(circle at 80% 50%, rgba(255,255,255,0.15) 0%, transparent 50%);
+                radial-gradient(circle at 20% 50%, rgba(255,255,255,0.1) 0%, transparent 50%),
+                radial-gradient(circle at 80% 50%, rgba(255,255,255,0.1) 0%, transparent 50%);
         }
         
         .card-hover {
@@ -48,18 +48,18 @@
         }
         
         .btn-github {
-            background: #24292e;
-            color: white;
+            background: #ffffff;
+            color: #24292e;
             border: 2px solid #24292e;
             transition: all 0.3s ease;
-            box-shadow: 0 4px 14px rgba(36, 41, 46, 0.3);
+            box-shadow: 0 4px 14px rgba(0, 0, 0, 0.2);
         }
         
         .btn-github:hover {
-            background: #1a1e22;
+            background: #f0f0f0;
             border-color: #1a1e22;
             transform: translateY(-2px);
-            box-shadow: 0 6px 20px rgba(36, 41, 46, 0.4);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
         }
         
         .feature-icon {
@@ -95,36 +95,36 @@
         <div class="container mx-auto px-4 py-20 relative z-10">
             <div class="max-w-4xl mx-auto text-center">
                 <!-- Badge -->
-                <div class="inline-flex items-center gap-2 bg-white/20 backdrop-filter blur px-4 py-2 rounded-full text-white text-sm font-medium mb-8">
-                    <span class="w-2 h-2 bg-green-300 rounded-full glowing"></span>
+                <div class="inline-flex items-center gap-2 bg-white/90 backdrop-filter blur px-4 py-2 rounded-full text-gray-800 text-sm font-medium mb-8 shadow-lg">
+                    <span class="w-2 h-2 bg-green-500 rounded-full glowing"></span>
                     Live Monitoring Active
                 </div>
                 
                 <!-- Title -->
-                <h1 class="text-5xl md:text-7xl font-extrabold text-white mb-6 leading-tight">
+                <h1 class="text-5xl md:text-7xl font-extrabold text-white mb-6 leading-tight drop-shadow-lg">
                     NVIDIA Model
                     <br />
-                    <span class="text-green-200">Monitor</span>
+                    <span class="text-white drop-shadow-md">Monitor</span>
                 </h1>
                 
                 <!-- Subtitle -->
-                <p class="text-xl md:text-2xl text-green-50 mb-8 max-w-2xl mx-auto">
+                <p class="text-xl md:text-2xl text-white mb-8 max-w-2xl mx-auto drop-shadow-md font-medium">
                     Track changes in NVIDIA's AI model ecosystem. Get real-time alerts when models are added or removed.
                 </p>
                 
                 <!-- Stats -->
                 <div class="grid grid-cols-3 gap-4 md:gap-8 mb-12 max-w-2xl mx-auto">
-                    <div class="text-center">
-                        <p class="text-3xl md:text-4xl font-bold text-white" id="statModels">170+</p>
-                        <p class="text-green-100 text-sm mt-1">Models Tracked</p>
+                    <div class="text-center bg-white/10 backdrop-blur-sm rounded-xl p-4">
+                        <p class="text-3xl md:text-4xl font-bold text-white" id="statModels">Loading...</p>
+                        <p class="text-green-100 text-sm mt-1 font-medium">Models Tracked</p>
                     </div>
-                    <div class="text-center">
-                        <p class="text-3xl md:text-4xl font-bold text-white" id="statProviders">50+</p>
-                        <p class="text-green-100 text-sm mt-1">Providers</p>
+                    <div class="text-center bg-white/10 backdrop-blur-sm rounded-xl p-4">
+                        <p class="text-3xl md:text-4xl font-bold text-white" id="statProviders">Loading...</p>
+                        <p class="text-green-100 text-sm mt-1 font-medium">Providers</p>
                     </div>
-                    <div class="text-center">
+                    <div class="text-center bg-white/10 backdrop-blur-sm rounded-xl p-4">
                         <p class="text-3xl md:text-4xl font-bold text-white">24/7</p>
-                        <p class="text-green-100 text-sm mt-1">Monitoring</p>
+                        <p class="text-green-100 text-sm mt-1 font-medium">Monitoring</p>
                     </div>
                 </div>
                 
@@ -148,7 +148,7 @@
         
         <!-- Scroll Indicator -->
         <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
-            <svg class="w-6 h-6 text-white/60" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <svg class="w-6 h-6 text-white/80" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
             </svg>
         </div>
@@ -283,8 +283,8 @@
     <!-- CTA Section -->
     <section class="py-20 gradient-bg hero-pattern">
         <div class="container mx-auto px-4 text-center">
-            <h2 class="text-4xl md:text-5xl font-bold text-white mb-6">Ready to Get Started?</h2>
-            <p class="text-xl text-green-50 mb-8 max-w-2xl mx-auto">
+            <h2 class="text-4xl md:text-5xl font-bold text-white mb-6 drop-shadow-lg">Ready to Get Started?</h2>
+            <p class="text-xl text-white mb-8 max-w-2xl mx-auto font-medium">
                 Explore the dashboard or fork the repository to run your own instance
             </p>
             <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
@@ -333,10 +333,14 @@
             .then(data => {
                 const modelCount = data.length;
                 const providers = new Set(data.map(m => m.split('/')[0]));
-                document.getElementById('statModels').textContent = modelCount + '+';
-                document.getElementById('statProviders').textContent = providers.size + '+';
+                document.getElementById('statModels').textContent = modelCount;
+                document.getElementById('statProviders').textContent = providers.size;
             })
-            .catch(err => console.log('Could not load stats:', err));
+            .catch(err => {
+                console.log('Could not load stats:', err);
+                document.getElementById('statModels').textContent = '170+';
+                document.getElementById('statProviders').textContent = '50+';
+            });
     </script>
 </body>
 </html>

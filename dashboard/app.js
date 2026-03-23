@@ -32,19 +32,30 @@ document.addEventListener('DOMContentLoaded', async () => {
 // Load models and changelog data
 async function loadData() {
     try {
+        console.log('Loading models data...');
         // Load models
         const modelsResponse = await fetch('../models.json');
+        if (!modelsResponse.ok) {
+            throw new Error(`Failed to load models.json: ${modelsResponse.status}`);
+        }
         modelsData = await modelsResponse.json();
-        
+        console.log(`Loaded ${modelsData.length} models`);
+
         // Load changelog
         try {
             const changelogResponse = await fetch('../CHANGELOG.json');
-            changelogData = await changelogResponse.json();
+            if (changelogResponse.ok) {
+                changelogData = await changelogResponse.json();
+                console.log(`Loaded ${changelogData.changes.length} changelog entries`);
+            } else {
+                console.log('No changelog found, using empty data');
+                changelogData = { changes: [] };
+            }
         } catch (e) {
             console.log('No changelog found, using empty data');
             changelogData = { changes: [] };
         }
-        
+
         // Update last updated time from models.json
         updateLastUpdated();
     } catch (error) {
