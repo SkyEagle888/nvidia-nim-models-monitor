@@ -68,9 +68,21 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Deploy to Cloudflare Pages
+      - name: Create wrangler.jsonc
+        run: |
+          cat > wrangler.jsonc << 'EOF'
+          {
+            "name": "nvidia-integrate-models-monitor",
+            "compatibility_date": "2025-09-27",
+            "assets": { "directory": "." },
+            "compatibility_flags": ["nodejs_compat"]
+          }
+          EOF
+
+      - name: Deploy to Cloudflare Workers
         uses: cloudflare/wrangler-action@v3
         with:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
-          command: deploy --name=nvidia-integrate-models-monitor --compatibility-date=2025-09-27 --assets=.
+          wranglerVersion: "3.99.0"
+          command: deploy
