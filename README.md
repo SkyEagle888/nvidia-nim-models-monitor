@@ -1,6 +1,7 @@
 # 🟢 NVIDIA Integrate Models Monitor
 
 [![NVIDIA Model Monitor](https://github.com/SkyEagle888/nvidia-integrate-models-monitor/actions/workflows/monitor.yml/badge.svg)](https://github.com/SkyEagle888/nvidia-integrate-models-monitor/actions/workflows/monitor.yml)
+[![Dashboard](https://img.shields.io/badge/dashboard-live-brightgreen)](https://skyeagle888.github.io/nvidia-integrate-models-monitor/dashboard/)
 
 An automated monitoring tool that tracks changes in the available AI models on [NVIDIA's Integrate API](https://integrate.api.nvidia.com/v1/models). It sends real-time alerts to Discord whenever a model is added or removed, and posts a daily status update even when nothing has changed.
 
@@ -13,10 +14,25 @@ An automated monitoring tool that tracks changes in the available AI models on [
   - 🚨 **Alerts** when models are added or removed (lists all affected model IDs).
   - 🆕 **Initial setup message** on first run, with a preview of tracked models.
   - ✅ **Daily status update** even when no changes are detected.
+- **Interactive Dashboard:** Beautiful web-based dashboard with search, filters, and analytics.
+- **Change History:** Tracks all model changes over time in `CHANGELOG.json`.
 - **Smart Formatting:** Automatically splits long messages into multiple parts to stay within Discord's 2000-character limit.
 - **Human-Readable List:** Categorises models by provider in [MODELS.md](./MODELS.md), refreshed on every run with a GMT+8 timestamp.
 - **Persistent State:** Commits updated `models.json` and `MODELS.md` back to the repository after each run.
 - **Privacy:** Uses GitHub Secrets to keep the Discord webhook URL private.
+
+## 📊 Dashboard
+
+Check out the interactive dashboard to explore all available models:
+
+👉 **[View Landing Page](https://skyeagle888.github.io/nvidia-integrate-models-monitor/)** | **[View Dashboard](https://skyeagle888.github.io/nvidia-integrate-models-monitor/dashboard/)**
+
+Features:
+- 🔍 Search and filter models by provider
+- 📊 Provider distribution charts
+- 📈 Model category breakdown
+- 📜 Recent change history timeline
+- 📋 Sortable, paginated model list
 
 ## 🛠️ How It Works
 
@@ -35,6 +51,7 @@ The repository uses a Python-based monitor (`monitor.py`) orchestrated by GitHub
 | `monitor.py` | Main Python script — fetches, compares, notifies, and saves |
 | `models.json` | Persisted list of models from the last detected change |
 | `MODELS.md` | Human-readable model list grouped by provider, updated every run |
+| `CHANGELOG.json` | History of model changes with timestamps |
 | `requirements.txt` | Python dependencies (`requests`, `pytz`) |
 | `.github/workflows/monitor.yml` | GitHub Actions workflow definition |
 

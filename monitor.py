@@ -9,8 +9,10 @@ import pytz
 API_URL = "https://integrate.api.nvidia.com/v1/models"
 MODELS_FILE = "models.json"
 MARKDOWN_FILE = "MODELS.md"
+CHANGELOG_FILE = "CHANGELOG.json"
 DISCORD_WEBHOOK_URL = os.environ.get("DISCORD_WEBHOOK_URL")
 TIMEZONE = pytz.timezone('Asia/Singapore')  # GMT+8
+MAX_CHANGELOG_ENTRIES = 100
 
 def fetch_models():
     try:
@@ -38,6 +40,37 @@ def save_models(models):
     except Exception as e:
         print(f"Error saving models file: {e}")
 
+def load_changelog():
+    if os.path.exists(CHANGELOG_FILE):
+        try:
+            with open(CHANGELOG_FILE, 'r') as f:
+                return json.load(f)
+        except Exception as e:
+            print(f"Error loading changelog file: {e}")
+    return {"changes": []}
+
+def save_changelog(changelog):
+    try:
+        # Keep only the last MAX_CHANGELOG_ENTRIES entries
+        if len(changelog["changes"]) > MAX_CHANGELOG_ENTRIES:
+            changelog["changes"] = changelog["changes"][-MAX_CHANGELOG_ENTRIES:]
+        with open(CHANGELOG_FILE, 'w') as f:
+            json.dump(changelog, f, indent=2)
+    except Exception as e:
+        print(f"Error saving changelog file: {e}")
+
+def update_changelog(added, removed, total_models):
+    changelog = load_changelog()
+    entry = {
+        "timestamp": datetime.utcnow().isoformat() + "Z",
+        "added": added,
+        "removed": removed,
+        "total_models": total_models
+    }
+    changelog["changes"].append(entry)
+    save_changelog(changelog)
+    print(f"Updated changelog with {len(added)} added, {len(removed)} removed")
+
 def update_markdown(models):
     try:
         grouped = defaultdict(list)
@@ -49,13 +82,13 @@ def update_markdown(models):
         content = f"# 📋 NVIDIA Integrated Models List\n\n"
         content += f"*Last updated: {timestamp} GMT+8*\n\n"
         content += f"Total Models: **{len(models)}**\n\n"
-        
+
         for provider in sorted(grouped.keys()):
             content += f"### 🏢 {provider.upper()}\n"
             for model in sorted(grouped[provider]):
                 content += f"- `{model}`\n"
             content += "\n"
-            
+
         with open(MARKDOWN_FILE, 'w', encoding='utf-8') as f:
             f.write(content)
         print(f"Updated {MARKDOWN_FILE}")
@@ -103,7 +136,7 @@ def main():
     removed = sorted(list(set(previous_models) - set(current_models)))
 
     timestamp = datetime.now(TIMEZONE).strftime("%Y-%m-%d %H:%M:%S")
-    
+
     if not added and not removed:
         message = f"🔍 **NVIDIA Model Monitor Update** ({timestamp})\n✅ No changes detected. Total models: {len(current_models)}"
     else:
@@ -123,12 +156,13 @@ def main():
 
     print(message)
     send_discord_message(message)
-    
+
     # Always update the Markdown file to keep timestamp fresh and ensure it exists for git add
     update_markdown(current_models)
-    
+
     if added or removed or is_initial_run:
         save_models(current_models)
+        update_changelog(added, removed, len(current_models))
         print("Updated models.json")
 
 if __name__ == "__main__":
