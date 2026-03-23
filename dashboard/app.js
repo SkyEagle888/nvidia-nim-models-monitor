@@ -19,14 +19,22 @@ const MODEL_TYPE_PATTERNS = {
 
 // Initialize dashboard
 document.addEventListener('DOMContentLoaded', async () => {
-    await loadData();
-    initializeCharts();
-    initializeTable();
-    renderStats();
-    renderProviderFilters();
-    renderChangeHistory();
-    renderTopProviders();
-    setupSearchFilter();
+    console.log('Dashboard initializing...');
+    try {
+        await loadData();
+        console.log('Data loaded, initializing components...');
+        initializeCharts();
+        initializeTable();
+        renderStats();
+        renderProviderFilters();
+        renderChangeHistory();
+        renderTopProviders();
+        setupSearchFilter();
+        console.log('Dashboard initialized successfully');
+    } catch (error) {
+        console.error('Failed to initialize dashboard:', error);
+        alert('Failed to load dashboard. Check console for details.');
+    }
 });
 
 // Load models and changelog data
@@ -122,14 +130,25 @@ function getModelsByType() {
 
 // Render stats cards
 function renderStats() {
+    console.log('Rendering stats, modelsData length:', modelsData.length);
+    
+    if (modelsData.length === 0) {
+        console.warn('No models data available');
+        document.getElementById('totalModels').textContent = '0';
+        document.getElementById('totalProviders').textContent = '0';
+        document.getElementById('modelTypes').textContent = '0';
+        document.getElementById('latestChanges').textContent = 'N/A';
+        return;
+    }
+    
     const providers = new Set(modelsData.map(m => getProvider(m)));
     const types = new Set(modelsData.map(m => getModelType(m)));
     const latestChange = changelogData.changes.length > 0 ? changelogData.changes[changelogData.changes.length - 1] : null;
-    
+
     document.getElementById('totalModels').textContent = modelsData.length;
     document.getElementById('totalProviders').textContent = providers.size;
     document.getElementById('modelTypes').textContent = types.size;
-    
+
     if (latestChange) {
         const changes = latestChange.added.length + latestChange.removed.length;
         document.getElementById('latestChanges').textContent = changes > 0 ? `+${latestChange.added.length}/-${latestChange.removed.length}` : 'No changes';
@@ -249,31 +268,38 @@ function initializeCharts() {
 
 // Initialize DataTable
 function initializeTable() {
+    console.log('Initializing table with', modelsData.length, 'models');
+    
+    if (modelsData.length === 0) {
+        console.warn('No models data available for table');
+        return;
+    }
+    
     const tableData = modelsData.map(model => ({
         id: model,
         provider: getProvider(model),
         type: getModelType(model)
     }));
-    
+
     dataTable = $('#modelsTable').DataTable({
         data: tableData,
         columns: [
-            { 
+            {
                 data: 'id',
                 render: (data) => `<code class="text-sm bg-gray-100 px-2 py-1 rounded">${data}</code>`
             },
-            { 
+            {
                 data: 'provider',
                 render: (data) => `<span class="provider-badge px-2 py-1 rounded bg-blue-100 text-blue-800 text-sm">${data}</span>`
             },
-            { 
+            {
                 data: 'type',
                 render: (data) => `<span class="badge badge-${data}">${data}</span>`
             },
             {
                 data: null,
                 render: (data) => `
-                    <button class="copy-btn px-3 py-1 text-sm border border-gray-300 rounded hover:bg-gray-100" 
+                    <button class="copy-btn px-3 py-1 text-sm border border-gray-300 rounded hover:bg-gray-100"
                             onclick="copyToClipboard('${data.id}', this)">
                         📋 Copy
                     </button>
@@ -290,6 +316,7 @@ function initializeTable() {
             infoFiltered: '(filtered from _MAX_ total models)'
         }
     });
+    console.log('Table initialized successfully');
 }
 
 // Render provider filter buttons
