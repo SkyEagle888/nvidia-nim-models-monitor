@@ -17,20 +17,13 @@
         }
         
         .gradient-bg {
-            background: linear-gradient(135deg, #16a34a 0%, #0d9488 50%, #0891b2 100%);
-        }
-        
-        .gradient-text {
-            background: linear-gradient(135deg, #16a34a 0%, #0d9488 50%, #0891b2 100%);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
+            background: linear-gradient(135deg, #064e3b 0%, #047857 50%, #059669 100%);
         }
         
         .hero-pattern {
             background-image: 
-                radial-gradient(circle at 20% 50%, rgba(255,255,255,0.1) 0%, transparent 50%),
-                radial-gradient(circle at 80% 50%, rgba(255,255,255,0.1) 0%, transparent 50%);
+                radial-gradient(circle at 20% 50%, rgba(255,255,255,0.08) 0%, transparent 50%),
+                radial-gradient(circle at 80% 50%, rgba(255,255,255,0.08) 0%, transparent 50%);
         }
         
         .card-hover {
@@ -39,39 +32,38 @@
         
         .card-hover:hover {
             transform: translateY(-4px);
-            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
         }
         
         .btn-primary {
-            background: linear-gradient(135deg, #16a34a 0%, #0d9488 100%);
+            background: linear-gradient(135deg, #10b981 0%, #059669 100%);
             transition: all 0.3s ease;
+            box-shadow: 0 4px 14px rgba(16, 185, 129, 0.5);
         }
         
         .btn-primary:hover {
-            background: linear-gradient(135deg, #15803d 0%, #0f766e 100%);
+            background: linear-gradient(135deg, #059669 0%, #047857 100%);
             transform: translateY(-2px);
-            box-shadow: 0 10px 20px rgba(22, 163, 74, 0.3);
+            box-shadow: 0 6px 20px rgba(16, 185, 129, 0.6);
         }
         
-        .btn-secondary {
-            background: rgba(255, 255, 255, 0.1);
-            backdrop-filter: blur(10px);
-            border: 2px solid rgba(255, 255, 255, 0.3);
+        .btn-github {
+            background: #ffffff;
+            color: #1f2937;
+            border: 2px solid #1f2937;
             transition: all 0.3s ease;
+            box-shadow: 0 4px 14px rgba(0, 0, 0, 0.25);
         }
         
-        .btn-secondary:hover {
-            background: rgba(255, 255, 255, 0.2);
-            border-color: rgba(255, 255, 255, 0.5);
+        .btn-github:hover {
+            background: #f3f4f6;
+            border-color: #111827;
             transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.35);
         }
         
         .feature-icon {
-            background: linear-gradient(135deg, #16a34a 0%, #0d9488 100%);
-        }
-        
-        .stat-card {
-            background: linear-gradient(135deg, #f0fdf4 0%, #ecfdf5 100%);
+            background: linear-gradient(135deg, #10b981 0%, #059669 100%);
         }
         
         @keyframes float {
@@ -84,12 +76,23 @@
         }
         
         @keyframes pulse-glow {
-            0%, 100% { box-shadow: 0 0 20px rgba(22, 163, 74, 0.3); }
-            50% { box-shadow: 0 0 40px rgba(22, 163, 74, 0.6); }
+            0%, 100% { box-shadow: 0 0 20px rgba(16, 185, 129, 0.5); }
+            50% { box-shadow: 0 0 40px rgba(16, 185, 129, 0.8); }
         }
         
         .glowing {
             animation: pulse-glow 2s ease-in-out infinite;
+        }
+        
+        .text-glow {
+            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5), 0 4px 8px rgba(0, 0, 0, 0.3);
+        }
+        
+        .stat-card {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(8px);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
         }
     </style>
 </head>
@@ -97,54 +100,54 @@
     <!-- Hero Section -->
     <section class="gradient-bg hero-pattern min-h-screen flex items-center justify-center relative overflow-hidden">
         <!-- Decorative Elements -->
-        <div class="absolute top-20 left-10 w-72 h-72 bg-white/10 rounded-full blur-3xl floating"></div>
-        <div class="absolute bottom-20 right-10 w-96 h-96 bg-teal-500/20 rounded-full blur-3xl floating" style="animation-delay: 2s;"></div>
+        <div class="absolute top-20 left-10 w-72 h-72 bg-emerald-400/15 rounded-full blur-3xl floating"></div>
+        <div class="absolute bottom-20 right-10 w-96 h-96 bg-green-500/15 rounded-full blur-3xl floating" style="animation-delay: 2s;"></div>
         
         <div class="container mx-auto px-4 py-20 relative z-10">
             <div class="max-w-4xl mx-auto text-center">
                 <!-- Badge -->
-                <div class="inline-flex items-center gap-2 bg-white/20 backdrop-filter blur px-4 py-2 rounded-full text-white text-sm font-medium mb-8">
-                    <span class="w-2 h-2 bg-green-400 rounded-full glowing"></span>
+                <div class="inline-flex items-center gap-2 bg-emerald-50 px-4 py-2 rounded-full text-emerald-900 text-sm font-semibold mb-8 shadow-xl border border-emerald-200">
+                    <span class="w-2 h-2 bg-green-500 rounded-full glowing"></span>
                     Live Monitoring Active
                 </div>
                 
                 <!-- Title -->
-                <h1 class="text-5xl md:text-7xl font-extrabold text-white mb-6 leading-tight">
+                <h1 class="text-5xl md:text-7xl font-extrabold text-white mb-6 leading-tight text-glow">
                     NVIDIA Model
                     <br />
-                    <span class="text-green-200">Monitor</span>
+                    <span class="text-emerald-200 text-glow">Monitor</span>
                 </h1>
                 
                 <!-- Subtitle -->
-                <p class="text-xl md:text-2xl text-green-100 mb-8 max-w-2xl mx-auto">
+                <p class="text-xl md:text-2xl text-emerald-50 mb-8 max-w-2xl mx-auto font-medium text-glow">
                     Track changes in NVIDIA's AI model ecosystem. Get real-time alerts when models are added or removed.
                 </p>
                 
                 <!-- Stats -->
                 <div class="grid grid-cols-3 gap-4 md:gap-8 mb-12 max-w-2xl mx-auto">
-                    <div class="text-center">
-                        <p class="text-3xl md:text-4xl font-bold text-white" id="statModels">170+</p>
-                        <p class="text-green-200 text-sm mt-1">Models Tracked</p>
+                    <div class="stat-card rounded-xl p-4">
+                        <p class="text-3xl md:text-4xl font-bold text-gray-900" id="statModels">Loading...</p>
+                        <p class="text-emerald-700 text-sm mt-1 font-semibold">Models Tracked</p>
                     </div>
-                    <div class="text-center">
-                        <p class="text-3xl md:text-4xl font-bold text-white" id="statProviders">50+</p>
-                        <p class="text-green-200 text-sm mt-1">Providers</p>
+                    <div class="stat-card rounded-xl p-4">
+                        <p class="text-3xl md:text-4xl font-bold text-gray-900" id="statProviders">Loading...</p>
+                        <p class="text-emerald-700 text-sm mt-1 font-semibold">Providers</p>
                     </div>
-                    <div class="text-center">
-                        <p class="text-3xl md:text-4xl font-bold text-white">24/7</p>
-                        <p class="text-green-200 text-sm mt-1">Monitoring</p>
+                    <div class="stat-card rounded-xl p-4">
+                        <p class="text-3xl md:text-4xl font-bold text-gray-900">24/7</p>
+                        <p class="text-emerald-700 text-sm mt-1 font-semibold">Monitoring</p>
                     </div>
                 </div>
                 
                 <!-- CTA Buttons -->
                 <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
-                    <a href="./dashboard/" class="btn-primary px-8 py-4 rounded-xl text-white font-semibold text-lg inline-flex items-center gap-2 shadow-lg">
+                    <a href="./dashboard/" class="btn-primary px-8 py-4 rounded-xl text-white font-semibold text-lg inline-flex items-center gap-2 shadow-xl">
                         <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path>
                         </svg>
                         View Dashboard
                     </a>
-                    <a href="https://github.com/SkyEagle888/nvidia-integrate-models-monitor" target="_blank" class="btn-secondary px-8 py-4 rounded-xl text-white font-semibold text-lg inline-flex items-center gap-2">
+                    <a href="https://github.com/SkyEagle888/nvidia-integrate-models-monitor" target="_blank" class="btn-github px-8 py-4 rounded-xl font-semibold text-lg inline-flex items-center gap-2 shadow-xl">
                         <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
                             <path fill-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" clip-rule="evenodd"></path>
                         </svg>
@@ -156,7 +159,7 @@
         
         <!-- Scroll Indicator -->
         <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
-            <svg class="w-6 h-6 text-white/60" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <svg class="w-6 h-6 text-emerald-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
             </svg>
         </div>
@@ -291,18 +294,18 @@
     <!-- CTA Section -->
     <section class="py-20 gradient-bg hero-pattern">
         <div class="container mx-auto px-4 text-center">
-            <h2 class="text-4xl md:text-5xl font-bold text-white mb-6">Ready to Get Started?</h2>
-            <p class="text-xl text-green-100 mb-8 max-w-2xl mx-auto">
+            <h2 class="text-4xl md:text-5xl font-bold text-white mb-6 text-glow">Ready to Get Started?</h2>
+            <p class="text-xl text-emerald-50 mb-8 max-w-2xl mx-auto font-medium text-glow">
                 Explore the dashboard or fork the repository to run your own instance
             </p>
             <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
-                <a href="./dashboard/" class="bg-white text-green-600 px-8 py-4 rounded-xl font-semibold text-lg inline-flex items-center gap-2 shadow-lg hover:bg-green-50 transition-all">
+                <a href="./dashboard/" class="bg-white text-green-700 px-8 py-4 rounded-xl font-semibold text-lg inline-flex items-center gap-2 shadow-xl hover:bg-green-50 transition-all">
                     <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path>
                     </svg>
                     View Dashboard
                 </a>
-                <a href="https://github.com/SkyEagle888/nvidia-integrate-models-monitor" target="_blank" class="btn-secondary px-8 py-4 rounded-xl text-white font-semibold text-lg inline-flex items-center gap-2">
+                <a href="https://github.com/SkyEagle888/nvidia-integrate-models-monitor" target="_blank" class="btn-github px-8 py-4 rounded-xl font-semibold text-lg inline-flex items-center gap-2 shadow-xl">
                     <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
                         <path fill-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" clip-rule="evenodd"></path>
                     </svg>
@@ -341,10 +344,14 @@
             .then(data => {
                 const modelCount = data.length;
                 const providers = new Set(data.map(m => m.split('/')[0]));
-                document.getElementById('statModels').textContent = modelCount + '+';
-                document.getElementById('statProviders').textContent = providers.size + '+';
+                document.getElementById('statModels').textContent = modelCount;
+                document.getElementById('statProviders').textContent = providers.size;
             })
-            .catch(err => console.log('Could not load stats:', err));
+            .catch(err => {
+                console.log('Could not load stats:', err);
+                document.getElementById('statModels').textContent = '170+';
+                document.getElementById('statProviders').textContent = '50+';
+            });
     </script>
 </body>
 </html>
