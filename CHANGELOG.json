@@ -1,3 +1,12 @@
 {
-  "changes": []
+  "changes": [
+    {
+      "timestamp": "2026-03-26T04:05:21.617649Z",
+      "added": [],
+      "removed": [
+        "minimaxai/minimax-m2.1"
+      ],
+      "total_models": 188
+    }
+  ]
 }
