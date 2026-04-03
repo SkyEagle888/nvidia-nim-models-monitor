@@ -1,8 +1,8 @@
 # 📋 NVIDIA Integrated Models List
 
-*Last updated: 2026-04-02 12:01:13 GMT+8*
+*Last updated: 2026-04-03 12:02:16 GMT+8*
 
-Total Models: **188**
+Total Models: **189**
 
 ### 🏢 01-AI
 - `01-ai/yi-large`
@@ -60,6 +60,7 @@ Total Models: **188**
 - `google/gemma-3-4b-it`
 - `google/gemma-3n-e2b-it`
 - `google/gemma-3n-e4b-it`
+- `google/gemma-4-31b-it`
 - `google/gemma-7b`
 - `google/paligemma`
 - `google/recurrentgemma-2b`
