@@ -15,6 +15,14 @@
         "nvidia/usdcode-llama-3.1-70b-instruct"
       ],
       "total_models": 187
+    },
+    {
+      "timestamp": "2026-04-03T04:02:16.401907Z",
+      "added": [
+        "google/gemma-4-31b-it"
+      ],
+      "removed": [],
+      "total_models": 189
     }
   ]
 }
