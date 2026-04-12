@@ -23,6 +23,14 @@
       ],
       "removed": [],
       "total_models": 189
+    },
+    {
+      "timestamp": "2026-04-12T04:20:07.412999Z",
+      "added": [
+        "minimaxai/minimax-m2.7"
+      ],
+      "removed": [],
+      "total_models": 190
     }
   ]
 }
