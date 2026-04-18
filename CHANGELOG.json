@@ -118,6 +118,18 @@
       ],
       "removed": [],
       "total_models": 133
+    },
+    {
+      "timestamp": "2026-04-18T04:04:36.544630Z",
+      "added": [
+        "nvidia/vila",
+        "z-ai/glm-5.1"
+      ],
+      "removed": [
+        "google/gemma-7b",
+        "speakleash/bielik-11b-v2.3-instruct"
+      ],
+      "total_models": 133
     }
   ]
 }

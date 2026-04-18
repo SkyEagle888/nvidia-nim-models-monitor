@@ -1,6 +1,6 @@
 # 📋 NVIDIA Integrated Models List
 
-*Last updated: 2026-04-17 12:21:36 GMT+8*
+*Last updated: 2026-04-18 12:04:36 GMT+8*
 
 Total Models: **133**
 
@@ -48,7 +48,6 @@ Total Models: **133**
 - `google/gemma-3n-e2b-it`
 - `google/gemma-3n-e4b-it`
 - `google/gemma-4-31b-it`
-- `google/gemma-7b`
 - `google/recurrentgemma-2b`
 
 ### 🏢 IBM
@@ -151,6 +150,7 @@ Total Models: **133**
 - `nvidia/nvidia-nemotron-nano-9b-v2`
 - `nvidia/riva-translate-4b-instruct`
 - `nvidia/riva-translate-4b-instruct-v1.1`
+- `nvidia/vila`
 
 ### 🏢 OPENAI
 - `openai/gpt-oss-120b`
@@ -172,9 +172,6 @@ Total Models: **133**
 ### 🏢 SNOWFLAKE
 - `snowflake/arctic-embed-l`
 
-### 🏢 SPEAKLEASH
-- `speakleash/bielik-11b-v2.3-instruct`
-
 ### 🏢 STEPFUN-AI
 - `stepfun-ai/step-3.5-flash`
 
@@ -191,6 +188,7 @@ Total Models: **133**
 - `writer/palmyra-med-70b-32k`
 
 ### 🏢 Z-AI
+- `z-ai/glm-5.1`
 - `z-ai/glm4.7`
 - `z-ai/glm5`
 
