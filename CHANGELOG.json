@@ -109,6 +109,15 @@
       ],
       "removed": [],
       "total_models": 131
+    },
+    {
+      "timestamp": "2026-04-17T04:21:36.180409Z",
+      "added": [
+        "nvidia/llama-3.3-nemotron-super-49b-v1",
+        "nvidia/nemotron-3-content-safety"
+      ],
+      "removed": [],
+      "total_models": 133
     }
   ]
 }

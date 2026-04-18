@@ -1,8 +1,8 @@
 # 📋 NVIDIA Integrated Models List
 
-*Last updated: 2026-04-16 12:23:57 GMT+8*
+*Last updated: 2026-04-17 12:21:36 GMT+8*
 
-Total Models: **131**
+Total Models: **133**
 
 ### 🏢 01-AI
 - `01-ai/yi-large`
@@ -124,12 +124,14 @@ Total Models: **131**
 - `nvidia/llama-3.2-nemoretriever-300m-embed-v1`
 - `nvidia/llama-3.2-nv-embedqa-1b-v1`
 - `nvidia/llama-3.2-nv-embedqa-1b-v2`
+- `nvidia/llama-3.3-nemotron-super-49b-v1`
 - `nvidia/llama-3.3-nemotron-super-49b-v1.5`
 - `nvidia/llama-nemotron-embed-1b-v2`
 - `nvidia/llama-nemotron-embed-vl-1b-v2`
 - `nvidia/llama3-chatqa-1.5-70b`
 - `nvidia/mistral-nemo-minitron-8b-8k-instruct`
 - `nvidia/nemoretriever-parse`
+- `nvidia/nemotron-3-content-safety`
 - `nvidia/nemotron-3-nano-30b-a3b`
 - `nvidia/nemotron-3-super-120b-a12b`
 - `nvidia/nemotron-3-super-120b-a12b`
