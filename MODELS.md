@@ -1,8 +1,8 @@
 # 📋 NVIDIA Integrated Models List
 
-*Last updated: 2026-04-19 12:22:53 GMT+8*
+*Last updated: 2026-04-20 12:29:06 GMT+8*
 
-Total Models: **132**
+Total Models: **133**
 
 ### 🏢 01-AI
 - `01-ai/yi-large`
@@ -150,6 +150,7 @@ Total Models: **132**
 - `nvidia/nvidia-nemotron-nano-9b-v2`
 - `nvidia/riva-translate-4b-instruct`
 - `nvidia/riva-translate-4b-instruct-v1.1`
+- `nvidia/vila`
 
 ### 🏢 OPENAI
 - `openai/gpt-oss-120b`

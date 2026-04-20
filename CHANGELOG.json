@@ -138,6 +138,14 @@
         "nvidia/vila"
       ],
       "total_models": 132
+    },
+    {
+      "timestamp": "2026-04-20T04:29:06.426421Z",
+      "added": [
+        "nvidia/vila"
+      ],
+      "removed": [],
+      "total_models": 133
     }
   ]
 }
