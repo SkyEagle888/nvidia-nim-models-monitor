@@ -130,6 +130,14 @@
         "speakleash/bielik-11b-v2.3-instruct"
       ],
       "total_models": 133
+    },
+    {
+      "timestamp": "2026-04-19T04:22:53.536314Z",
+      "added": [],
+      "removed": [
+        "nvidia/vila"
+      ],
+      "total_models": 132
     }
   ]
 }
