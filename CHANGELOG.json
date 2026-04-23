@@ -154,6 +154,15 @@
         "nvidia/vila"
       ],
       "total_models": 132
+    },
+    {
+      "timestamp": "2026-04-23T04:21:25.221238Z",
+      "added": [
+        "nvidia/ai-synthetic-video-detector",
+        "nvidia/vila"
+      ],
+      "removed": [],
+      "total_models": 134
     }
   ]
 }
