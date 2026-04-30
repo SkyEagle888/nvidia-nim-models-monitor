@@ -188,6 +188,14 @@
       ],
       "removed": [],
       "total_models": 136
+    },
+    {
+      "timestamp": "2026-04-29T04:39:12.427050Z",
+      "added": [
+        "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning"
+      ],
+      "removed": [],
+      "total_models": 140
     }
   ]
 }
