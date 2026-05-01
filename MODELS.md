@@ -1,6 +1,6 @@
 # 📋 NVIDIA Integrated Models List
 
-*Last updated: 2026-04-29 12:39:12 GMT+8*
+*Last updated: 2026-04-30 12:43:28 GMT+8*
 
 Total Models: **140**
 
@@ -95,6 +95,7 @@ Total Models: **140**
 - `mistralai/mistral-large-2-instruct`
 - `mistralai/mistral-large-3-675b-instruct-2512`
 - `mistralai/mistral-medium-3-instruct`
+- `mistralai/mistral-medium-3.5-128b`
 - `mistralai/mistral-nemotron`
 - `mistralai/mistral-small-4-119b-2603`
 - `mistralai/mixtral-8x22b-instruct-v0.1`
@@ -105,7 +106,6 @@ Total Models: **140**
 - `moonshotai/kimi-k2-instruct`
 - `moonshotai/kimi-k2-instruct-0905`
 - `moonshotai/kimi-k2-thinking`
-- `moonshotai/kimi-k2.5`
 
 ### 🏢 NV-MISTRALAI
 - `nv-mistralai/mistral-nemo-12b-instruct`

@@ -196,6 +196,16 @@
       ],
       "removed": [],
       "total_models": 140
+    },
+    {
+      "timestamp": "2026-04-30T04:43:28.545001Z",
+      "added": [
+        "mistralai/mistral-medium-3.5-128b"
+      ],
+      "removed": [
+        "moonshotai/kimi-k2.5"
+      ],
+      "total_models": 140
     }
   ]
 }
