@@ -1,8 +1,8 @@
 # 📋 NVIDIA Integrated Models List
 
-*Last updated: 2026-04-30 12:43:28 GMT+8*
+*Last updated: 2026-05-01 12:57:34 GMT+8*
 
-Total Models: **140**
+Total Models: **141**
 
 ### 🏢 01-AI
 - `01-ai/yi-large`
@@ -106,6 +106,7 @@ Total Models: **140**
 - `moonshotai/kimi-k2-instruct`
 - `moonshotai/kimi-k2-instruct-0905`
 - `moonshotai/kimi-k2-thinking`
+- `moonshotai/kimi-k2.6`
 
 ### 🏢 NV-MISTRALAI
 - `nv-mistralai/mistral-nemo-12b-instruct`
