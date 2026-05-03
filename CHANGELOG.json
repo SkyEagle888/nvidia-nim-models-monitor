@@ -214,6 +214,14 @@
       ],
       "removed": [],
       "total_models": 141
+    },
+    {
+      "timestamp": "2026-05-02T04:27:07.986229Z",
+      "added": [],
+      "removed": [
+        "nvidia/vila"
+      ],
+      "total_models": 140
     }
   ]
 }
