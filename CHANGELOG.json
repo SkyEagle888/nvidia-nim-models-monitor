@@ -222,6 +222,17 @@
         "nvidia/vila"
       ],
       "total_models": 140
+    },
+    {
+      "timestamp": "2026-05-04T04:49:34.211687Z",
+      "added": [
+        "nvidia/vila"
+      ],
+      "removed": [
+        "deepseek-ai/deepseek-v3.1-terminus",
+        "deepseek-ai/deepseek-v3.2"
+      ],
+      "total_models": 139
     }
   ]
 }
