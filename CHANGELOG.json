@@ -241,6 +241,17 @@
         "nvidia/vila"
       ],
       "total_models": 138
+    },
+    {
+      "timestamp": "2026-05-07T04:44:33.202024Z",
+      "added": [
+        "nvidia/vila"
+      ],
+      "removed": [
+        "meta/llama-3.1-405b-instruct",
+        "moonshotai/kimi-k2-instruct-0905"
+      ],
+      "total_models": 137
     }
   ]
 }
