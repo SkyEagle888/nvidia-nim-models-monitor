@@ -252,6 +252,14 @@
         "moonshotai/kimi-k2-instruct-0905"
       ],
       "total_models": 137
+    },
+    {
+      "timestamp": "2026-05-08T04:24:07.766737Z",
+      "added": [],
+      "removed": [
+        "nvidia/vila"
+      ],
+      "total_models": 136
     }
   ]
 }
