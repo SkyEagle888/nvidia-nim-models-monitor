@@ -276,6 +276,18 @@
         "nvidia/vila"
       ],
       "total_models": 136
+    },
+    {
+      "timestamp": "2026-05-11T05:06:43.022914Z",
+      "added": [
+        "nvidia/vila"
+      ],
+      "removed": [
+        "mistralai/devstral-2-123b-instruct-2512",
+        "mistralai/magistral-small-2506",
+        "mistralai/mistral-medium-3-instruct"
+      ],
+      "total_models": 134
     }
   ]
 }
