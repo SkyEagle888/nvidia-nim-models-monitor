@@ -1,8 +1,8 @@
 # 📋 NVIDIA Integrated Models List
 
-*Last updated: 2026-05-10 12:53:12 GMT+8*
+*Last updated: 2026-05-11 13:06:43 GMT+8*
 
-Total Models: **136**
+Total Models: **134**
 
 ### 🏢 01-AI
 - `01-ai/yi-large`
@@ -84,14 +84,11 @@ Total Models: **136**
 
 ### 🏢 MISTRALAI
 - `mistralai/codestral-22b-instruct-v0.1`
-- `mistralai/devstral-2-123b-instruct-2512`
-- `mistralai/magistral-small-2506`
 - `mistralai/ministral-14b-instruct-2512`
 - `mistralai/mistral-7b-instruct-v0.3`
 - `mistralai/mistral-large`
 - `mistralai/mistral-large-2-instruct`
 - `mistralai/mistral-large-3-675b-instruct-2512`
-- `mistralai/mistral-medium-3-instruct`
 - `mistralai/mistral-medium-3.5-128b`
 - `mistralai/mistral-nemotron`
 - `mistralai/mistral-small-4-119b-2603`
@@ -154,6 +151,7 @@ Total Models: **136**
 - `nvidia/nvidia-nemotron-nano-9b-v2`
 - `nvidia/riva-translate-4b-instruct`
 - `nvidia/riva-translate-4b-instruct-v1.1`
+- `nvidia/vila`
 
 ### 🏢 OPENAI
 - `openai/gpt-oss-120b`
