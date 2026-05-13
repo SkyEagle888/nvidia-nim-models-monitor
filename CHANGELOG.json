@@ -288,6 +288,18 @@
         "mistralai/mistral-medium-3-instruct"
       ],
       "total_models": 134
+    },
+    {
+      "timestamp": "2026-05-12T04:48:05.504928Z",
+      "added": [],
+      "removed": [
+        "google/gemma-3-27b-it",
+        "minimaxai/minimax-m2.5",
+        "moonshotai/kimi-k2-instruct",
+        "moonshotai/kimi-k2-thinking",
+        "qwen/qwen2.5-coder-32b-instruct"
+      ],
+      "total_models": 129
     }
   ]
 }

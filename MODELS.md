@@ -1,8 +1,8 @@
 # 📋 NVIDIA Integrated Models List
 
-*Last updated: 2026-05-11 13:06:43 GMT+8*
+*Last updated: 2026-05-12 12:48:05 GMT+8*
 
-Total Models: **134**
+Total Models: **129**
 
 ### 🏢 01-AI
 - `01-ai/yi-large`
@@ -45,7 +45,6 @@ Total Models: **134**
 - `google/gemma-2-2b-it`
 - `google/gemma-2b`
 - `google/gemma-3-12b-it`
-- `google/gemma-3-27b-it`
 - `google/gemma-3-4b-it`
 - `google/gemma-3n-e2b-it`
 - `google/gemma-3n-e4b-it`
@@ -79,7 +78,6 @@ Total Models: **134**
 - `microsoft/phi-4-multimodal-instruct`
 
 ### 🏢 MINIMAXAI
-- `minimaxai/minimax-m2.5`
 - `minimaxai/minimax-m2.7`
 
 ### 🏢 MISTRALAI
@@ -97,8 +95,6 @@ Total Models: **134**
 - `mistralai/mixtral-8x7b-instruct-v0.1`
 
 ### 🏢 MOONSHOTAI
-- `moonshotai/kimi-k2-instruct`
-- `moonshotai/kimi-k2-thinking`
 - `moonshotai/kimi-k2.6`
 
 ### 🏢 NV-MISTRALAI
@@ -160,7 +156,6 @@ Total Models: **134**
 - `openai/gpt-oss-20b`
 
 ### 🏢 QWEN
-- `qwen/qwen2.5-coder-32b-instruct`
 - `qwen/qwen3-coder-480b-a35b-instruct`
 - `qwen/qwen3-next-80b-a3b-instruct`
 - `qwen/qwen3-next-80b-a3b-thinking`
