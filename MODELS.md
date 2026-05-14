@@ -1,8 +1,8 @@
 # 📋 NVIDIA Integrated Models List
 
-*Last updated: 2026-05-13 12:58:19 GMT+8*
+*Last updated: 2026-05-14 12:57:15 GMT+8*
 
-Total Models: **129**
+Total Models: **128**
 
 ### 🏢 01-AI
 - `01-ai/yi-large`
@@ -185,7 +185,6 @@ Total Models: **129**
 
 ### 🏢 Z-AI
 - `z-ai/glm-5.1`
-- `z-ai/glm4.7`
 - `z-ai/glm5`
 
 ### 🏢 ZYPHRA
