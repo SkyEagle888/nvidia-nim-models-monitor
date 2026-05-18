@@ -73,9 +73,7 @@
   "nvidia/llama-3.1-nemotron-safety-guard-8b-v3",
   "nvidia/llama-3.1-nemotron-ultra-253b-v1",
   "nvidia/llama-3.2-nemoretriever-1b-vlm-embed-v1",
-  "nvidia/llama-3.2-nemoretriever-300m-embed-v1",
   "nvidia/llama-3.2-nv-embedqa-1b-v1",
-  "nvidia/llama-3.2-nv-embedqa-1b-v2",
   "nvidia/llama-3.3-nemotron-super-49b-v1",
   "nvidia/llama-3.3-nemotron-super-49b-v1.5",
   "nvidia/llama-nemotron-embed-1b-v2",
@@ -125,6 +123,5 @@
   "writer/palmyra-med-70b",
   "writer/palmyra-med-70b-32k",
   "z-ai/glm-5.1",
-  "z-ai/glm5",
   "zyphra/zamba2-7b-instruct"
 ]

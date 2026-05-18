@@ -308,6 +308,16 @@
         "z-ai/glm4.7"
       ],
       "total_models": 128
+    },
+    {
+      "timestamp": "2026-05-18T05:16:58.183614Z",
+      "added": [],
+      "removed": [
+        "nvidia/llama-3.2-nemoretriever-300m-embed-v1",
+        "nvidia/llama-3.2-nv-embedqa-1b-v2",
+        "z-ai/glm5"
+      ],
+      "total_models": 125
     }
   ]
 }
