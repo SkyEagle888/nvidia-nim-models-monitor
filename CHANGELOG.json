@@ -318,6 +318,15 @@
         "z-ai/glm5"
       ],
       "total_models": 125
+    },
+    {
+      "timestamp": "2026-05-21T05:19:19.333297Z",
+      "added": [],
+      "removed": [
+        "mistralai/mixtral-8x22b-instruct-v0.1",
+        "qwen/qwen3-next-80b-a3b-thinking"
+      ],
+      "total_models": 123
     }
   ]
 }

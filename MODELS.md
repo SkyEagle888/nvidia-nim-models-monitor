@@ -1,8 +1,8 @@
 # 📋 NVIDIA Integrated Models List
 
-*Last updated: 2026-05-20 13:15:27 GMT+8*
+*Last updated: 2026-05-21 13:19:19 GMT+8*
 
-Total Models: **125**
+Total Models: **123**
 
 ### 🏢 01-AI
 - `01-ai/yi-large`
@@ -90,7 +90,6 @@ Total Models: **125**
 - `mistralai/mistral-medium-3.5-128b`
 - `mistralai/mistral-nemotron`
 - `mistralai/mistral-small-4-119b-2603`
-- `mistralai/mixtral-8x22b-instruct-v0.1`
 - `mistralai/mixtral-8x22b-v0.1`
 - `mistralai/mixtral-8x7b-instruct-v0.1`
 
@@ -156,7 +155,6 @@ Total Models: **125**
 ### 🏢 QWEN
 - `qwen/qwen3-coder-480b-a35b-instruct`
 - `qwen/qwen3-next-80b-a3b-instruct`
-- `qwen/qwen3-next-80b-a3b-thinking`
 - `qwen/qwen3.5-122b-a10b`
 - `qwen/qwen3.5-397b-a17b`
 
