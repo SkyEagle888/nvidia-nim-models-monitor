@@ -1,8 +1,8 @@
 # 📋 NVIDIA Integrated Models List
 
-*Last updated: 2026-05-27 13:41:14 GMT+8*
+*Last updated: 2026-05-28 13:19:39 GMT+8*
 
-Total Models: **123**
+Total Models: **117**
 
 ### 🏢 01-AI
 - `01-ai/yi-large`
@@ -34,8 +34,6 @@ Total Models: **123**
 ### 🏢 DEEPSEEK-AI
 - `deepseek-ai/deepseek-coder-6.7b-instruct`
 - `deepseek-ai/deepseek-v4-flash`
-- `deepseek-ai/deepseek-v4-flash`
-- `deepseek-ai/deepseek-v4-pro`
 - `deepseek-ai/deepseek-v4-pro`
 
 ### 🏢 GOOGLE
@@ -125,8 +123,6 @@ Total Models: **123**
 - `nvidia/nemotron-3-content-safety`
 - `nvidia/nemotron-3-nano-30b-a3b`
 - `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning`
-- `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning`
-- `nvidia/nemotron-3-super-120b-a12b`
 - `nvidia/nemotron-3-super-120b-a12b`
 - `nvidia/nemotron-4-340b-instruct`
 - `nvidia/nemotron-4-340b-reward`
@@ -148,8 +144,6 @@ Total Models: **123**
 
 ### 🏢 OPENAI
 - `openai/gpt-oss-120b`
-- `openai/gpt-oss-120b`
-- `openai/gpt-oss-20b`
 - `openai/gpt-oss-20b`
 
 ### 🏢 QWEN
