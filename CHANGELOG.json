@@ -327,6 +327,14 @@
         "qwen/qwen3-next-80b-a3b-thinking"
       ],
       "total_models": 123
+    },
+    {
+      "timestamp": "2026-05-29T05:38:45.706094Z",
+      "added": [
+        "stepfun-ai/step-3.7-flash"
+      ],
+      "removed": [],
+      "total_models": 118
     }
   ]
 }
