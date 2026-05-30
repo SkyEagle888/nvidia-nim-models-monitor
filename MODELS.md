@@ -1,8 +1,8 @@
 # 📋 NVIDIA Integrated Models List
 
-*Last updated: 2026-05-28 13:19:39 GMT+8*
+*Last updated: 2026-05-29 13:38:45 GMT+8*
 
-Total Models: **117**
+Total Models: **118**
 
 ### 🏢 01-AI
 - `01-ai/yi-large`
@@ -160,6 +160,7 @@ Total Models: **117**
 
 ### 🏢 STEPFUN-AI
 - `stepfun-ai/step-3.5-flash`
+- `stepfun-ai/step-3.7-flash`
 
 ### 🏢 STOCKMARK
 - `stockmark/stockmark-2-100b-instruct`
