@@ -343,6 +343,14 @@
       ],
       "removed": [],
       "total_models": 119
+    },
+    {
+      "timestamp": "2026-06-05T05:47:47.825423Z",
+      "added": [
+        "nvidia/nemotron-3-ultra-550b-a55b"
+      ],
+      "removed": [],
+      "total_models": 120
     }
   ]
 }
