@@ -1,6 +1,6 @@
 # 📋 NVIDIA Integrated Models List
 
-*Last updated: 2026-06-10 13:48:07 GMT+8*
+*Last updated: 2026-06-11 14:04:52 GMT+8*
 
 Total Models: **120**
 
@@ -40,6 +40,7 @@ Total Models: **120**
 - `google/codegemma-1.1-7b`
 - `google/codegemma-7b`
 - `google/deplot`
+- `google/diffusiongemma-26b-a4b-it`
 - `google/gemma-2-2b-it`
 - `google/gemma-2b`
 - `google/gemma-3-12b-it`
@@ -149,7 +150,6 @@ Total Models: **120**
 - `openai/gpt-oss-20b`
 
 ### 🏢 QWEN
-- `qwen/qwen3-coder-480b-a35b-instruct`
 - `qwen/qwen3-next-80b-a3b-instruct`
 - `qwen/qwen3.5-122b-a10b`
 - `qwen/qwen3.5-397b-a17b`

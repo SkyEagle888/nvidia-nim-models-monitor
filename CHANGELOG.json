@@ -351,6 +351,16 @@
       ],
       "removed": [],
       "total_models": 120
+    },
+    {
+      "timestamp": "2026-06-11T06:04:52.525618Z",
+      "added": [
+        "google/diffusiongemma-26b-a4b-it"
+      ],
+      "removed": [
+        "qwen/qwen3-coder-480b-a35b-instruct"
+      ],
+      "total_models": 120
     }
   ]
 }
