@@ -44,6 +44,7 @@
   "microsoft/phi-4-mini-instruct",
   "microsoft/phi-4-multimodal-instruct",
   "minimaxai/minimax-m2.7",
+  "minimaxai/minimax-m3",
   "mistralai/codestral-22b-instruct-v0.1",
   "mistralai/ministral-14b-instruct-2512",
   "mistralai/mistral-7b-instruct-v0.3",

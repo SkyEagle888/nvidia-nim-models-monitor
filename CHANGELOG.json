@@ -361,6 +361,14 @@
         "qwen/qwen3-coder-480b-a35b-instruct"
       ],
       "total_models": 120
+    },
+    {
+      "timestamp": "2026-06-13T05:45:47.003711Z",
+      "added": [
+        "minimaxai/minimax-m3"
+      ],
+      "removed": [],
+      "total_models": 121
     }
   ]
 }
