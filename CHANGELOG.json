@@ -377,6 +377,14 @@
         "z-ai/glm-5.1"
       ],
       "total_models": 120
+    },
+    {
+      "timestamp": "2026-07-03T04:56:18.620847Z",
+      "added": [
+        "z-ai/glm-5.2"
+      ],
+      "removed": [],
+      "total_models": 121
     }
   ]
 }
