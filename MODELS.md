@@ -1,8 +1,8 @@
 # 📋 NVIDIA Integrated Models List
 
-*Last updated: 2026-07-14 12:16:19 GMT+8*
+*Last updated: 2026-07-15 12:16:04 GMT+8*
 
-Total Models: **121**
+Total Models: **116**
 
 ### 🏢 01-AI
 - `01-ai/yi-large`
@@ -73,8 +73,6 @@ Total Models: **121**
 - `microsoft/kosmos-2`
 - `microsoft/phi-3-vision-128k-instruct`
 - `microsoft/phi-3.5-moe-instruct`
-- `microsoft/phi-4-mini-instruct`
-- `microsoft/phi-4-multimodal-instruct`
 
 ### 🏢 MINIMAXAI
 - `minimaxai/minimax-m2.7`
@@ -122,7 +120,6 @@ Total Models: **121**
 - `nvidia/llama3-chatqa-1.5-70b`
 - `nvidia/mistral-nemo-minitron-8b-8k-instruct`
 - `nvidia/nemoretriever-parse`
-- `nvidia/nemotron-3-content-safety`
 - `nvidia/nemotron-3-nano-30b-a3b`
 - `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning`
 - `nvidia/nemotron-3-super-120b-a12b`
@@ -130,7 +127,6 @@ Total Models: **121**
 - `nvidia/nemotron-3.5-content-safety`
 - `nvidia/nemotron-4-340b-instruct`
 - `nvidia/nemotron-4-340b-reward`
-- `nvidia/nemotron-content-safety-reasoning-4b`
 - `nvidia/nemotron-mini-4b-instruct`
 - `nvidia/nemotron-nano-12b-v2-vl`
 - `nvidia/nemotron-nano-3-30b-a3b`
@@ -164,9 +160,6 @@ Total Models: **121**
 ### 🏢 STEPFUN-AI
 - `stepfun-ai/step-3.5-flash`
 - `stepfun-ai/step-3.7-flash`
-
-### 🏢 STOCKMARK
-- `stockmark/stockmark-2-100b-instruct`
 
 ### 🏢 UPSTAGE
 - `upstage/solar-10.7b-instruct`
