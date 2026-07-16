@@ -397,6 +397,15 @@
         "stockmark/stockmark-2-100b-instruct"
       ],
       "total_models": 116
+    },
+    {
+      "timestamp": "2026-07-16T04:24:53.525240Z",
+      "added": [
+        "poolside/laguna-xs-2.1",
+        "thinkingmachines/inkling"
+      ],
+      "removed": [],
+      "total_models": 118
     }
   ]
 }

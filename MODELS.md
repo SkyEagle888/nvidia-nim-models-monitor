@@ -1,8 +1,8 @@
 # 📋 NVIDIA Integrated Models List
 
-*Last updated: 2026-07-15 12:16:04 GMT+8*
+*Last updated: 2026-07-16 12:24:53 GMT+8*
 
-Total Models: **116**
+Total Models: **118**
 
 ### 🏢 01-AI
 - `01-ai/yi-large`
@@ -146,6 +146,9 @@ Total Models: **116**
 - `openai/gpt-oss-120b`
 - `openai/gpt-oss-20b`
 
+### 🏢 POOLSIDE
+- `poolside/laguna-xs-2.1`
+
 ### 🏢 QWEN
 - `qwen/qwen3-next-80b-a3b-instruct`
 - `qwen/qwen3.5-122b-a10b`
@@ -160,6 +163,9 @@ Total Models: **116**
 ### 🏢 STEPFUN-AI
 - `stepfun-ai/step-3.5-flash`
 - `stepfun-ai/step-3.7-flash`
+
+### 🏢 THINKINGMACHINES
+- `thinkingmachines/inkling`
 
 ### 🏢 UPSTAGE
 - `upstage/solar-10.7b-instruct`
