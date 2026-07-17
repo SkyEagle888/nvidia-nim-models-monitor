@@ -406,6 +406,14 @@
       ],
       "removed": [],
       "total_models": 118
+    },
+    {
+      "timestamp": "2026-07-17T04:24:27.590717Z",
+      "added": [
+        "nvidia/nemotron-3-embed-1b"
+      ],
+      "removed": [],
+      "total_models": 119
     }
   ]
 }
