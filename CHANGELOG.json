@@ -414,6 +414,14 @@
       ],
       "removed": [],
       "total_models": 119
+    },
+    {
+      "timestamp": "2026-07-20T04:51:36.010814Z",
+      "added": [],
+      "removed": [
+        "qwen/qwen3.5-122b-a10b"
+      ],
+      "total_models": 118
     }
   ]
 }
