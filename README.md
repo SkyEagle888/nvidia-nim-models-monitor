@@ -3,7 +3,7 @@
 [![NVIDIA Model Monitor](https://github.com/SkyEagle888/nvidia-integrate-models-monitor/actions/workflows/monitor.yml/badge.svg)](https://github.com/SkyEagle888/nvidia-integrate-models-monitor/actions/workflows/monitor.yml)
 [![Dashboard](https://img.shields.io/badge/dashboard-live-brightgreen)](https://skyeagle888.github.io/nvidia-integrate-models-monitor/dashboard/)
 
-An automated monitoring tool that tracks changes in the available AI models on [NVIDIA's Integrate API](https://integrate.api.nvidia.com/v1/models). It sends real-time alerts to Discord whenever a model is added or removed, and posts a daily status update even when nothing has changed.
+An automated monitoring tool that tracks changes in the available AI models on [NVIDIA's Integrate API](https://integrate.api.nvidia.com/v1/models). It sends real-time alerts to Discord whenever a model is added or removed, and stays silent on days with no changes.
 
 ## 🚀 Features
 
@@ -13,7 +13,7 @@ An automated monitoring tool that tracks changes in the available AI models on [
 - **Discord Notifications:**
   - 🚨 **Alerts** when models are added or removed (lists all affected model IDs).
   - 🆕 **Initial setup message** on first run, with a preview of tracked models.
-  - ✅ **Daily status update** even when no changes are detected.
+  - 🤫 **Silent on no-change days** — no Discord message when the model list is unchanged.
 - **Interactive Dashboard:** Beautiful web-based dashboard with search, filters, and analytics.
 - **Change History:** Tracks all model changes over time in `CHANGELOG.json`.
 - **Smart Formatting:** Automatically splits long messages into multiple parts to stay within Discord's 2000-character limit.
@@ -40,7 +40,7 @@ The repository uses a Python-based monitor (`monitor.py`) orchestrated by GitHub
 
 1. **Fetch:** Calls `https://integrate.api.nvidia.com/v1/models` and extracts a sorted list of model IDs.
 2. **Compare:** Loads the previously saved `models.json` and computes added and removed models using set differences.
-3. **Notify:** Sends a formatted Discord message via webhook — an alert if changes exist, or a quiet status update if not.
+3. **Notify:** Sends a formatted Discord message via webhook only when changes are detected (or on initial setup). No message is sent on no-change days.
 4. **Persist:** Always regenerates `MODELS.md` (grouped by provider, with a fresh timestamp). Updates `models.json` only when the model list has changed.
 5. **Commit:** The `github-actions[bot]` commits and pushes both files back to the repository using `[skip ci]` to prevent a workflow loop.
 

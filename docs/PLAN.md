@@ -7,7 +7,7 @@
 - [x] **FR-01**: Fetch model list from NVIDIA API (`monitor.py:fetch_models()` — line 17)
 - [x] **FR-02**: Diff current vs cached models (`monitor.py:main()` — lines 135-136)
 - [x] **FR-03**: Discord webhook notifications (`monitor.py:send_discord_message()` — line 98)
-- [x] **FR-04**: Daily status update when no changes (`monitor.py:main()` — line 141)
+- [x] **FR-04**: Skip Discord notification on no-change runs (`monitor.py:main()` — silent branch)
 - [x] **FR-05**: Persist state to `models.json` (`monitor.py:save_models()` — line 36)
 - [x] **FR-06**: Change history in `CHANGELOG.json` (`monitor.py:update_changelog()` — line 62)
 - [x] **FR-07**: Generate `MODELS.md` by provider (`monitor.py:update_markdown()` — line 74)

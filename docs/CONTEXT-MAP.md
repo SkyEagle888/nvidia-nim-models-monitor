@@ -3,7 +3,7 @@
 ## Module Mappings
 
 ### Core Monitor
-- `monitor.py` | Main orchestrator: fetch, compare, notify, persist | Lines 1-169 | Validated: ✅ 2026-05-18
+- `monitor.py` | Main orchestrator: fetch, compare, notify (only on change), persist | Lines 1-171 | Validated: ✅ 2026-05-18
 - `models.json` | Persisted sorted model ID array (last known state) | Auto-generated | Validated: ✅ 2026-05-18
 - `CHANGELOG.json` | Change history with timestamps (max 100 entries) | Auto-generated | Validated: ✅ 2026-05-18
 - `MODELS.md` | Human-readable model list grouped by provider | Auto-generated | Validated: ✅ 2026-05-18
@@ -29,7 +29,7 @@
 
 | File | Responsibility |
 |---|---|
-| `monitor.py` | Fetch NVIDIA API, diff models, send Discord alerts, update files |
+| `monitor.py` | Fetch NVIDIA API, diff models, send Discord alerts on change (silent otherwise), update files |
 | `models.json` | Single source of truth for last-known model list |
 | `CHANGELOG.json` | Append-only change log with add/remove events |
 | `MODELS.md` | Human-readable provider-grouped model listing |

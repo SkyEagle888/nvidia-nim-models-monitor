@@ -9,7 +9,7 @@ Automated monitoring tool that tracks changes in available AI models on NVIDIA's
 - **FR-01**: Fetch current model list from NVIDIA Integrate API daily
 - **FR-02**: Compare against cached state to detect additions and removals
 - **FR-03**: Send Discord webhook notifications on detected changes
-- **FR-04**: Send daily status update even when no changes detected
+- **FR-04**: Skip Discord notification when no changes are detected (silent on no-change runs)
 - **FR-05**: Persist model list state in `models.json`
 - **FR-06**: Maintain change history in `CHANGELOG.json` (max 100 entries)
 - **FR-07**: Generate human-readable model listing in `MODELS.md` grouped by provider
