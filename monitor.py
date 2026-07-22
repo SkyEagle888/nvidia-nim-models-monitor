@@ -138,7 +138,7 @@ def main():
     timestamp = datetime.now(TIMEZONE).strftime("%Y-%m-%d %H:%M:%S")
 
     if not added and not removed:
-        message = f"🔍 **NVIDIA Model Monitor Update** ({timestamp})\n✅ No changes detected. Total models: {len(current_models)}"
+        print(f"✅ No changes detected ({timestamp}). Total models: {len(current_models)}. Skipping Discord notification.")
     else:
         message = f"🚨 **NVIDIA Model Monitor ALERT** ({timestamp})\n"
         if is_initial_run:
@@ -154,8 +154,8 @@ def main():
                 message += f"❌ **Removed ({len(removed)}):**\n" + "\n".join([f"- `{m}`" for m in removed]) + "\n"
         message += f"\n📊 Total models now: {len(current_models)}"
 
-    print(message)
-    send_discord_message(message)
+        print(message)
+        send_discord_message(message)
 
     # Always update the Markdown file to keep timestamp fresh and ensure it exists for git add
     update_markdown(current_models)
