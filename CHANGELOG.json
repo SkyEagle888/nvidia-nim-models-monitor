@@ -422,6 +422,16 @@
         "qwen/qwen3.5-122b-a10b"
       ],
       "total_models": 118
+    },
+    {
+      "timestamp": "2026-07-24T04:31:13.378497Z",
+      "added": [
+        "nvidia/ising-calibration-1.5-31b"
+      ],
+      "removed": [
+        "mistralai/mistral-large-3-675b-instruct-2512"
+      ],
+      "total_models": 118
     }
   ]
 }

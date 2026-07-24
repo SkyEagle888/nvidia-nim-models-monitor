@@ -1,6 +1,6 @@
 # 📋 NVIDIA Integrated Models List
 
-*Last updated: 2026-07-23 12:32:43 GMT+8*
+*Last updated: 2026-07-24 12:31:13 GMT+8*
 
 Total Models: **118**
 
@@ -84,7 +84,6 @@ Total Models: **118**
 - `mistralai/mistral-7b-instruct-v0.3`
 - `mistralai/mistral-large`
 - `mistralai/mistral-large-2-instruct`
-- `mistralai/mistral-large-3-675b-instruct-2512`
 - `mistralai/mistral-medium-3.5-128b`
 - `mistralai/mistral-nemotron`
 - `mistralai/mistral-small-4-119b-2603`
@@ -103,6 +102,7 @@ Total Models: **118**
 - `nvidia/embed-qa-4`
 - `nvidia/gliner-pii`
 - `nvidia/ising-calibration-1-35b-a3b`
+- `nvidia/ising-calibration-1.5-31b`
 - `nvidia/llama-3.1-nemoguard-8b-content-safety`
 - `nvidia/llama-3.1-nemoguard-8b-topic-control`
 - `nvidia/llama-3.1-nemotron-51b-instruct`
