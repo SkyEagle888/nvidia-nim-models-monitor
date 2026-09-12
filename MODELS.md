@@ -1,8 +1,8 @@
 # 📋 NVIDIA Integrated Models List
 
-*Last updated: 2026-09-11 13:58:57 GMT+8*
+*Last updated: 2026-09-12 13:46:52 GMT+8*
 
-Total Models: **80**
+Total Models: **82**
 
 ### 🏢 01-AI
 - `01-ai/yi-large`
@@ -98,6 +98,7 @@ Total Models: **80**
 - `nvidia/nemotron-4-340b-reward`
 - `nvidia/nemotron-nano-3-30b-a3b`
 - `nvidia/nemotron-parse`
+- `nvidia/nemotron-parse-2.0`
 - `nvidia/neva-22b`
 - `nvidia/nv-embedqa-mistral-7b-v2`
 - `nvidia/nvclip`
@@ -120,6 +121,9 @@ Total Models: **80**
 - `writer/palmyra-fin-70b-32k`
 - `writer/palmyra-med-70b`
 - `writer/palmyra-med-70b-32k`
+
+### 🏢 Z-AI
+- `z-ai/glm-5.3-flash`
 
 ### 🏢 ZYPHRA
 - `zyphra/zamba2-7b-instruct`
