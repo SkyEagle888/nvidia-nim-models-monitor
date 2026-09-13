@@ -576,6 +576,15 @@
         "minimaxai/minimax-m3"
       ],
       "total_models": 80
+    },
+    {
+      "timestamp": "2026-09-12T05:46:52.007547Z",
+      "added": [
+        "nvidia/nemotron-parse-2.0",
+        "z-ai/glm-5.3-flash"
+      ],
+      "removed": [],
+      "total_models": 82
     }
   ]
 }

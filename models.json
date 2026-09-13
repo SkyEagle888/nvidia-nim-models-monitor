@@ -64,6 +64,7 @@
   "nvidia/nemotron-4-340b-reward",
   "nvidia/nemotron-nano-3-30b-a3b",
   "nvidia/nemotron-parse",
+  "nvidia/nemotron-parse-2.0",
   "nvidia/neva-22b",
   "nvidia/nv-embedqa-mistral-7b-v2",
   "nvidia/nvclip",
@@ -78,5 +79,6 @@
   "writer/palmyra-fin-70b-32k",
   "writer/palmyra-med-70b",
   "writer/palmyra-med-70b-32k",
+  "z-ai/glm-5.3-flash",
   "zyphra/zamba2-7b-instruct"
 ]
