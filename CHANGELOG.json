@@ -585,6 +585,14 @@
       ],
       "removed": [],
       "total_models": 82
+    },
+    {
+      "timestamp": "2026-09-15T06:09:38.555758Z",
+      "added": [],
+      "removed": [
+        "deepseek-ai/deepseek-v4-pro-0813"
+      ],
+      "total_models": 81
     }
   ]
 }

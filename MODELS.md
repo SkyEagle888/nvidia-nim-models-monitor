@@ -1,8 +1,8 @@
 # 📋 NVIDIA Integrated Models List
 
-*Last updated: 2026-09-14 14:16:48 GMT+8*
+*Last updated: 2026-09-15 14:09:38 GMT+8*
 
-Total Models: **82**
+Total Models: **81**
 
 ### 🏢 01-AI
 - `01-ai/yi-large`
@@ -25,7 +25,6 @@ Total Models: **82**
 ### 🏢 DEEPSEEK-AI
 - `deepseek-ai/deepseek-coder-6.7b-instruct`
 - `deepseek-ai/deepseek-v4-flash-0731`
-- `deepseek-ai/deepseek-v4-pro-0813`
 
 ### 🏢 GOOGLE
 - `google/codegemma-1.1-7b`
