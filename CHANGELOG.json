@@ -593,6 +593,14 @@
         "deepseek-ai/deepseek-v4-pro-0813"
       ],
       "total_models": 81
+    },
+    {
+      "timestamp": "2026-09-16T06:01:23.279808Z",
+      "added": [
+        "z-ai/glm-5.3"
+      ],
+      "removed": [],
+      "total_models": 82
     }
   ]
 }
