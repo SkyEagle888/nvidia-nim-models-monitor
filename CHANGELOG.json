@@ -601,6 +601,16 @@
       ],
       "removed": [],
       "total_models": 82
+    },
+    {
+      "timestamp": "2026-09-22T06:12:50.339773Z",
+      "added": [
+        "deepseek-ai/deepseek-v4.1-flash"
+      ],
+      "removed": [
+        "deepseek-ai/deepseek-v4-flash-0731"
+      ],
+      "total_models": 82
     }
   ]
 }
