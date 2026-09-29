@@ -611,6 +611,14 @@
         "deepseek-ai/deepseek-v4-flash-0731"
       ],
       "total_models": 82
+    },
+    {
+      "timestamp": "2026-09-29T06:53:30.717442Z",
+      "added": [],
+      "removed": [
+        "mistralai/mistral-nemotron"
+      ],
+      "total_models": 81
     }
   ]
 }
