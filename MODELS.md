@@ -1,8 +1,8 @@
 # 📋 NVIDIA Integrated Models List
 
-*Last updated: 2026-10-05 15:01:55 GMT+8*
+*Last updated: 2026-10-06 15:33:55 GMT+8*
 
-Total Models: **81**
+Total Models: **80**
 
 ### 🏢 01-AI
 - `01-ai/yi-large`
@@ -101,7 +101,6 @@ Total Models: **81**
 - `nvidia/nv-embedqa-mistral-7b-v2`
 - `nvidia/nvclip`
 - `nvidia/riva-translate-4b-instruct`
-- `nvidia/riva-translate-4b-instruct-v1.1`
 - `nvidia/riva-translate-4b-instruct-v2`
 - `nvidia/vila`
 
