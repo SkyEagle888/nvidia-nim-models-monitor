@@ -1,8 +1,8 @@
 # 📋 NVIDIA Integrated Models List
 
-*Last updated: 2026-10-15 13:53:52 GMT+8*
+*Last updated: 2026-10-16 13:51:46 GMT+8*
 
-Total Models: **80**
+Total Models: **81**
 
 ### 🏢 01-AI
 - `01-ai/yi-large`
@@ -65,7 +65,6 @@ Total Models: **80**
 
 ### 🏢 MOONSHOTAI
 - `moonshotai/kimi-k2.6`
-- `moonshotai/kimi-k3`
 
 ### 🏢 NV-MISTRALAI
 - `nv-mistralai/mistral-nemo-12b-instruct`
@@ -92,6 +91,7 @@ Total Models: **80**
 - `nvidia/nemotron-3-ultra-550b-a55b`
 - `nvidia/nemotron-3.5-content-safety`
 - `nvidia/nemotron-3.5-lightning-30b-a3b`
+- `nvidia/nemotron-3.5-super-vl-120b-a12b`
 - `nvidia/nemotron-4-340b-instruct`
 - `nvidia/nemotron-4-340b-reward`
 - `nvidia/nemotron-nano-3-30b-a3b`
@@ -112,6 +112,9 @@ Total Models: **80**
 
 ### 🏢 SNOWFLAKE
 - `snowflake/arctic-embed-l`
+
+### 🏢 STEPFUN-AI
+- `stepfun-ai/step-5-preview`
 
 ### 🏢 WRITER
 - `writer/palmyra-creative-122b`
