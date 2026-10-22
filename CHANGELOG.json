@@ -638,6 +638,15 @@
         "moonshotai/kimi-k3"
       ],
       "total_models": 81
+    },
+    {
+      "timestamp": "2026-10-21T06:01:00.016781Z",
+      "added": [
+        "nvidia/nemotron-3.5-embed-1b",
+        "nvidia/nemotron-3.5-embed-8b"
+      ],
+      "removed": [],
+      "total_models": 83
     }
   ]
 }
