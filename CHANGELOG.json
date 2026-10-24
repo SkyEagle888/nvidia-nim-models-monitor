@@ -647,6 +647,14 @@
       ],
       "removed": [],
       "total_models": 83
+    },
+    {
+      "timestamp": "2026-10-23T06:01:58.602315Z",
+      "added": [
+        "minimaxai/minimax-m3.1-flash"
+      ],
+      "removed": [],
+      "total_models": 84
     }
   ]
 }
