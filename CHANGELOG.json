@@ -663,6 +663,14 @@
       ],
       "removed": [],
       "total_models": 85
+    },
+    {
+      "timestamp": "2026-10-29T07:04:19.995766Z",
+      "added": [],
+      "removed": [
+        "z-ai/glm-5.3"
+      ],
+      "total_models": 84
     }
   ]
 }
