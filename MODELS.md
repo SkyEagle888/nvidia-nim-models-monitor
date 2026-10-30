@@ -1,8 +1,8 @@
 # 📋 NVIDIA Integrated Models List
 
-*Last updated: 2026-10-28 14:51:05 GMT+8*
+*Last updated: 2026-10-29 15:04:19 GMT+8*
 
-Total Models: **85**
+Total Models: **84**
 
 ### 🏢 01-AI
 - `01-ai/yi-large`
@@ -129,7 +129,6 @@ Total Models: **85**
 - `writer/palmyra-med-70b-32k`
 
 ### 🏢 Z-AI
-- `z-ai/glm-5.3`
 - `z-ai/glm-5.3-flash`
 
 ### 🏢 ZYPHRA
