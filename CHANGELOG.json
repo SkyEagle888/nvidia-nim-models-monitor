@@ -671,6 +671,14 @@
         "z-ai/glm-5.3"
       ],
       "total_models": 84
+    },
+    {
+      "timestamp": "2026-10-30T07:05:08.425461Z",
+      "added": [
+        "mistralai/mistral-large-4-1t-a52b"
+      ],
+      "removed": [],
+      "total_models": 85
     }
   ]
 }
