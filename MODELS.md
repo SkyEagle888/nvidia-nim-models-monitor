@@ -1,8 +1,8 @@
 # 📋 NVIDIA Integrated Models List
 
-*Last updated: 2026-11-05 15:54:18 GMT+8*
+*Last updated: 2026-11-06 15:55:03 GMT+8*
 
-Total Models: **85**
+Total Models: **84**
 
 ### 🏢 01-AI
 - `01-ai/yi-large`
@@ -45,7 +45,6 @@ Total Models: **85**
 
 ### 🏢 META
 - `meta/codellama-70b`
-- `meta/llama-3.2-11b-vision-instruct`
 - `meta/llama-3.2-90b-vision-instruct`
 - `meta/llama-guard-4-12b`
 - `meta/llama2-70b`
