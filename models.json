@@ -21,7 +21,6 @@
   "ibm/granite-34b-code-instruct",
   "ibm/granite-8b-code-instruct",
   "meta/codellama-70b",
-  "meta/llama-3.2-11b-vision-instruct",
   "meta/llama-3.2-90b-vision-instruct",
   "meta/llama-guard-4-12b",
   "meta/llama2-70b",

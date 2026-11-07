@@ -679,6 +679,14 @@
       ],
       "removed": [],
       "total_models": 85
+    },
+    {
+      "timestamp": "2026-11-06T07:55:03.869534Z",
+      "added": [],
+      "removed": [
+        "meta/llama-3.2-11b-vision-instruct"
+      ],
+      "total_models": 84
     }
   ]
 }
