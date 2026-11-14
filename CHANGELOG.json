@@ -687,6 +687,14 @@
         "meta/llama-3.2-11b-vision-instruct"
       ],
       "total_models": 84
+    },
+    {
+      "timestamp": "2026-11-13T07:56:30.404463Z",
+      "added": [],
+      "removed": [
+        "google/diffusiongemma-26b-a4b-it"
+      ],
+      "total_models": 83
     }
   ]
 }
