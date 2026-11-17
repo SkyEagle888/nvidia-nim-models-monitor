@@ -1,14 +1,11 @@
 # 📋 NVIDIA Integrated Models List
 
-*Last updated: 2026-11-16 15:58:06 GMT+8*
+*Last updated: 2026-11-17 17:11:54 GMT+8*
 
-Total Models: **39**
+Total Models: **32**
 
 ### 🏢 BIGCODE
 - `bigcode/starcoder2-15b`
-
-### 🏢 DEEPSEEK-AI
-- `deepseek-ai/deepseek-v4.1-flash`
 
 ### 🏢 GOOGLE
 - `google/gemma-3-12b-it`
@@ -16,8 +13,6 @@ Total Models: **39**
 - `google/gemma-4-31b-it`
 
 ### 🏢 META
-- `meta/llama-3.2-90b-vision-instruct`
-- `meta/llama-guard-4-12b`
 - `meta/muse-glimmer-30b`
 
 ### 🏢 MINIMAXAI
@@ -31,12 +26,10 @@ Total Models: **39**
 - `nvidia/cosmos-reason2-8b`
 - `nvidia/embed-qa-4`
 - `nvidia/ising-calibration-1.5-31b`
-- `nvidia/llama-3.1-nemoguard-8b-content-safety`
 - `nvidia/llama-3.1-nemoguard-8b-topic-control`
 - `nvidia/llama-3.1-nemotron-safety-guard-8b-v3`
 - `nvidia/llama-3.2-nemoretriever-1b-vlm-embed-v1`
 - `nvidia/llama-3.2-nv-embedqa-1b-v1`
-- `nvidia/llama-nemotron-embed-vl-1b-v2`
 - `nvidia/nemotron-3-embed-1b`
 - `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning`
 - `nvidia/nemotron-3-ultra-550b-a55b`
@@ -46,8 +39,6 @@ Total Models: **39**
 - `nvidia/nemotron-3.5-embed-8b`
 - `nvidia/nemotron-3.5-lightning-30b-a3b`
 - `nvidia/nemotron-3.5-super-vl-120b-a12b`
-- `nvidia/nemotron-parse`
-- `nvidia/nemotron-parse-2.0`
 - `nvidia/nv-embedqa-mistral-7b-v2`
 - `nvidia/nvclip`
 - `nvidia/riva-translate-4b-instruct-v2`
