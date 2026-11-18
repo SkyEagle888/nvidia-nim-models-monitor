@@ -746,6 +746,20 @@
         "zyphra/zamba2-7b-instruct"
       ],
       "total_models": 39
+    },
+    {
+      "timestamp": "2026-11-17T09:11:54.724608Z",
+      "added": [],
+      "removed": [
+        "deepseek-ai/deepseek-v4.1-flash",
+        "meta/llama-3.2-90b-vision-instruct",
+        "meta/llama-guard-4-12b",
+        "nvidia/llama-3.1-nemoguard-8b-content-safety",
+        "nvidia/llama-nemotron-embed-vl-1b-v2",
+        "nvidia/nemotron-parse",
+        "nvidia/nemotron-parse-2.0"
+      ],
+      "total_models": 32
     }
   ]
 }
