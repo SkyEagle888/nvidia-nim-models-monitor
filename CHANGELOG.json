@@ -760,6 +760,16 @@
         "nvidia/nemotron-parse-2.0"
       ],
       "total_models": 32
+    },
+    {
+      "timestamp": "2026-11-18T08:31:30.965873Z",
+      "added": [
+        "moonshotai/kimi-k3.1-pro"
+      ],
+      "removed": [
+        "openai/gpt-oss-20b"
+      ],
+      "total_models": 32
     }
   ]
 }
