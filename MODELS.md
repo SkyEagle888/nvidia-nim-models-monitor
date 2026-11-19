@@ -1,6 +1,6 @@
 # 📋 NVIDIA Integrated Models List
 
-*Last updated: 2026-11-17 17:11:54 GMT+8*
+*Last updated: 2026-11-18 16:31:30 GMT+8*
 
 Total Models: **32**
 
@@ -20,6 +20,9 @@ Total Models: **32**
 
 ### 🏢 MISTRALAI
 - `mistralai/mistral-large-4-1t-a52b`
+
+### 🏢 MOONSHOTAI
+- `moonshotai/kimi-k3.1-pro`
 
 ### 🏢 NVIDIA
 - `nvidia/ai-synthetic-video-detector`
@@ -42,9 +45,6 @@ Total Models: **32**
 - `nvidia/nv-embedqa-mistral-7b-v2`
 - `nvidia/nvclip`
 - `nvidia/riva-translate-4b-instruct-v2`
-
-### 🏢 OPENAI
-- `openai/gpt-oss-20b`
 
 ### 🏢 POOLSIDE
 - `poolside/laguna-xs-2.1`
