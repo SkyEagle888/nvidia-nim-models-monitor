@@ -1,11 +1,14 @@
 # 📋 NVIDIA Integrated Models List
 
-*Last updated: 2026-11-19 16:47:00 GMT+8*
+*Last updated: 2026-11-20 16:31:31 GMT+8*
 
-Total Models: **32**
+Total Models: **33**
 
 ### 🏢 BIGCODE
 - `bigcode/starcoder2-15b`
+
+### 🏢 FASTINO
+- `fastino/gliner2-pii`
 
 ### 🏢 GOOGLE
 - `google/gemma-3-12b-it`

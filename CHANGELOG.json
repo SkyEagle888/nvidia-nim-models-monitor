@@ -770,6 +770,14 @@
         "openai/gpt-oss-20b"
       ],
       "total_models": 32
+    },
+    {
+      "timestamp": "2026-11-20T08:31:31.401844Z",
+      "added": [
+        "fastino/gliner2-pii"
+      ],
+      "removed": [],
+      "total_models": 33
     }
   ]
 }
