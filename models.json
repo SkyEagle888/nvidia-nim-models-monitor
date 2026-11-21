@@ -1,5 +1,6 @@
 [
   "bigcode/starcoder2-15b",
+  "fastino/gliner2-pii",
   "google/gemma-3-12b-it",
   "google/gemma-3-4b-it",
   "google/gemma-4-31b-it",
