@@ -16,7 +16,6 @@
   "nvidia/llama-3.1-nemotron-safety-guard-8b-v3",
   "nvidia/llama-3.2-nemoretriever-1b-vlm-embed-v1",
   "nvidia/llama-3.2-nv-embedqa-1b-v1",
-  "nvidia/nemotron-3-embed-1b",
   "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning",
   "nvidia/nemotron-3-ultra-550b-a55b",
   "nvidia/nemotron-3.5-bolt-e4b",

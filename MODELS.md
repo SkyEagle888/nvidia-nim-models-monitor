@@ -1,8 +1,8 @@
 # 📋 NVIDIA Integrated Models List
 
-*Last updated: 2026-11-22 15:58:54 GMT+8*
+*Last updated: 2026-11-23 17:03:01 GMT+8*
 
-Total Models: **33**
+Total Models: **32**
 
 ### 🏢 BIGCODE
 - `bigcode/starcoder2-15b`
@@ -36,7 +36,6 @@ Total Models: **33**
 - `nvidia/llama-3.1-nemotron-safety-guard-8b-v3`
 - `nvidia/llama-3.2-nemoretriever-1b-vlm-embed-v1`
 - `nvidia/llama-3.2-nv-embedqa-1b-v1`
-- `nvidia/nemotron-3-embed-1b`
 - `nvidia/nemotron-3-nano-omni-30b-a3b-reasoning`
 - `nvidia/nemotron-3-ultra-550b-a55b`
 - `nvidia/nemotron-3.5-bolt-e4b`
