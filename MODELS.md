@@ -1,8 +1,8 @@
 # 📋 NVIDIA Integrated Models List
 
-*Last updated: 2026-11-24 18:54:40 GMT+8*
+*Last updated: 2026-11-25 17:51:01 GMT+8*
 
-Total Models: **32**
+Total Models: **30**
 
 ### 🏢 BIGCODE
 - `bigcode/starcoder2-15b`
@@ -13,10 +13,6 @@ Total Models: **32**
 ### 🏢 GOOGLE
 - `google/gemma-3-12b-it`
 - `google/gemma-3-4b-it`
-- `google/gemma-4-31b-it`
-
-### 🏢 META
-- `meta/muse-glimmer-30b`
 
 ### 🏢 MINIMAXAI
 - `minimaxai/minimax-m3.1-flash`
